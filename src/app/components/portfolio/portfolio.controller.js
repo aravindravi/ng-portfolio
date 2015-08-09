@@ -7,9 +7,7 @@
 
   /** @ngInject */
   function PortfolioController($timeout) {
-        $(document).scroll(scrollCheck);
-      	if($(this).scrollTop() < pHeight)
-            changeHeaderState(1);
-      	});        
+
+      	      
   }
 })();

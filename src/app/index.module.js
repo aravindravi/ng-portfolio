@@ -15,18 +15,4 @@
           return path === $location.path();
       }
     });
-    var changeHeaderState = function(state){
-      if(state==3)
-      {
-        $('header').addClass('state2').addClass('state3');
-      }
-      else if(state==2)
-      {
-        $('header').addClass('state2').removeClass('state3');
-      }
-      else
-      {
-       $('header').removeClass('state3');
-      }
-    };
 })();

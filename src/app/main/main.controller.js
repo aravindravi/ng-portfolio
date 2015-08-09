@@ -49,7 +49,7 @@
        });
   };
   
-  var changeHeaderState= function(state){
+  function changeHeaderState(state){
       if(state==3)
       {
         $('header').addClass('state2').addClass('state3');

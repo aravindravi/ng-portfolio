@@ -13,12 +13,12 @@
         controllerAs: 'main'
       })
       .when('/portfolio', {
-          templateUrl: 'app/portfolio/portfolio.html',
+          templateUrl: 'app/components/portfolio/portfolio.html',
           controller: 'PortfolioController',
           controllerAs: 'portfolio'
       })
       .when('/about', {
-          templateUrl: 'app/about/about.html',
+          templateUrl: 'app/components/about/about.html',
           controller: 'AboutController',
           controllerAs: 'about'
       })
