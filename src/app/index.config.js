@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('desktop')
+    .module('arApp')
     .config(config);
 
   /** @ngInject */

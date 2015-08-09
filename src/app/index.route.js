@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('desktop')
+    .module('arApp')
     .config(routeConfig);
 
   function routeConfig($routeProvider) {
@@ -12,8 +12,18 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
+      .when('/portfolio', {
+          templateUrl: 'app/portfolio/portfolio.html',
+          controller: 'PortfolioController',
+          controllerAs: 'portfolio'
+      })
+      .when('/about', {
+          templateUrl: 'app/about/about.html',
+          controller: 'AboutController',
+          controllerAs: 'about'
+      })
       .otherwise({
-        redirectTo: '/'
+          redirectTo: '/'
       });
   }
 

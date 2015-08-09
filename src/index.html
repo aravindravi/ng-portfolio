@@ -1,8 +1,8 @@
 <!doctype html>
-<html ng-app="desktop">
+<html ng-app="arApp">
   <head>
     <meta charset="utf-8">
-    <title>desktop</title>
+    <title>Aravind Ravi - UX Designer</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -23,8 +23,30 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <div ng-view></div>
+    <header id="top" class="state2 header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <a href="#/"><h1 class="name"></h1></a>
+              <nav ng-controller="navCtrl">
+                <ul class="nav menu">
+                  <li ng-class="{active:isActive('/')}"><a href="#/">Home</a></li>
+                  <li ng-class="{active:isActive('/portfolio')}"><a  href="#/portfolio">Portfolio</a></li>
+                  <!-- <li ng-class="{active:isActive('/blog')}"><a  href="https://medium.com/@aravindravi" target="_blank">Blog</a></li> -->
+                  <li ng-class="{active:isActive('/about')}"><a href="#/about">About</a></li>
+                  <li ng-class="{active:isActive('/resume')}"><a href="assets/files/Aravind_Ravi_CV.pdf" target="_blank">Resume</a></li>
+                </ul>
+              </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper" ng-view autoscroll="true">
+      <!-- Content Goes Here */ -->
+    </div>
+    <footer class="wow fadeIn" data-wow-delay="1.4s">
+      <p class="text-center">&copy; Website handcrafted by Aravind Ravi
+    </footer>
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->

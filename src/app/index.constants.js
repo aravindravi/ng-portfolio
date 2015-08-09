@@ -3,5 +3,5 @@
   'use strict';
 
   angular
-    .module('desktop')
+    .module('arApp')
 })();

@@ -1,34 +1,121 @@
 <div class="container">
-
-  <div>
-    <acme-navbar creationDate="main.creationDate" />
-  </div>
-
-  <div class="jumbotron text-center">
-    <h1>'Allo, 'Allo!</h1>
-    <p class="lead">
-      <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-      Always a pleasure scaffolding your apps.
-    </p>
-    <p class="animated infinite" ng-class="main.classAnimation">
-      <button type="button" class="btn btn-lg btn-success">Splendid Toastr</button>
-    </p>
-    <p>
-      With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']" />
-    </p>
-  </div>
-
+<section id="intro">
   <div class="row">
-    <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-      <div class="thumbnail">
-        <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-        <div class="caption">
-          <h3>{{ awesomeThing.title }}</h3>
-          <p>{{ awesomeThing.description }}</p>
-          <p><a ng-href="{{awesomeThing.url}}">{{ awesomeThing.url }}</a></p>
-        </div>
-      </div>
+    <div class="col-md-4 col-sm-4 col-xs-12 pic-container wow fadeIn" data-wow-delay="0.3s">
+      <img class="profile-pic" src="app/main/assets/img/profile-pic.png">
+    </div>
+    <div class="description col-md-8 col-sm-8 col-xs-12 wow fadeIn" data-wow-delay="0.3s">
+      <h1 class="big">Hello, I'm <span class="special">Aravind Ravi</span>, a value oriented</h1>
+      <h2 class="big"><span class="special">UX Designer</span>, <span class="special">Tech-Geek</span> and <span class="special">Storyteller</span></h2><br>
+      <h3 class="small">I'm a Masters student in the <span class="special">Human Centered Design & Engineering</span> program at <span class="special">University of Washington, Seattle</span></h3>
     </div>
   </div>
-
-</div>
+  <div class="row">
+    <ul class="snippets">
+      <li class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="fa fa-cogs"></div>
+        <h4>Working On</h4>
+        <p>Smarthome Concepts</p>
+      </li>
+      <li class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.8s">
+        <div class="fa fa-book"></div>
+        <h4>Learning Today</h4>
+        <p>Framer JS, Origami</p>
+      </li>
+      <li class="col-md-4 col-sm-4 social text-center wow fadeInUp" data-wow-delay="1.0s">
+        <div class="fa fa-comment"></div>
+        <h4 class="text-gray">Active On</h4>
+        <ul class="links">
+          <li class="rotateIn"><a href="http://in.linkedin.com/in/raviarvind" title="LinkedIn" data-toggle="tooltip" data-placement="bottom" target="_blank"><span class="fa fa-linkedin fa-lg"></span></a></li>
+          <li class="rotateIn"><a href="https://www.facebook.com/ravi.arvind" title="Facebook" data-toggle="tooltip" data-placement="bottom" target="_blank"><span class="fa fa-facebook fa-lg"></span></a></li>
+          <li class="rotateIn"><a href="https://twitter.com/_aravindravi" title="Twitter" data-toggle="tooltip" data-placement="bottom" target="_blank"><span class="fa fa-twitter fa-lg"></span></a></li>
+          <li class="rotateIn"><a href="https://medium.com/@aravindravi" title="Medium" data-toggle="tooltip" data-placement="bottom" target="_blank"><span class="fa fa-medium fa-lg"></span></a></li>
+          <li class="rotateIn"><a href="mailto:aravind.ravi@outlook.com" title="Email" data-toggle="tooltip" data-placement="bottom" target="_blank"><span class="fa fa-envelope fa-lg"></span></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="stats">
+  <h3 class="slide-title home">What I Do</h3>
+  <div class="row">
+    <ul class="skills col-md-12">
+      <li class="col-md-4 col-sm-4">
+        <div class="chart" data-percent="90"><span class="percent fed">Interaction<br>Design</span></div>
+        <ul class="tags">
+          <li class="wow rotateInDownLeft" data-wow-offset="60">Axure</li>
+          <li class="wow rotateInDownLeft" data-wow-offset="60">Balsamiq</li>
+          <li class="wow rotateInDownLeft" data-wow-offset="60">InVision</li>
+          <li class="wow rotateInDownLeft" data-wow-offset="60">Muse</li>
+          <li class="wow rotateInDownLeft" data-wow-offset="60">UXPin</li>
+          <li class="wow rotateInDownLeft" data-wow-offset="60">Paper & Pencil</li>
+        </ul>
+      </li>
+      <li class="col-md-4 col-sm-4">
+        <div class="chart" data-percent="85"><span class="percent fed">Front-end Development</span></div>
+        <ul class="tags">
+          <li class="wow rotateInDownLeft" data-wow-delay=".4s" data-wow-offset="60">HTML5</li>
+          <li class="wow rotateInDownLeft" data-wow-delay=".4s" data-wow-offset="60">CSS3</li>
+          <li class="wow rotateInDownLeft" data-wow-delay=".4s" data-wow-offset="60">JavaScript</li>
+          <li class="wow rotateInDownLeft" data-wow-delay=".4s" data-wow-offset="60">jQuery</li>
+          <li class="wow rotateInDownLeft" data-wow-delay=".4s" data-wow-offset="60">Bootstrap</li>
+          <li class="wow rotateInDownLeft" data-wow-delay=".4s" data-wow-offset="60">Angular JS</li>
+        </ul>
+      </li>
+      <li class="col-md-4 col-sm-4">
+        <div class="chart" data-percent="75"><span class="percent">Visual Design</span></div>
+        <ul class="tags">
+          <li class="wow rotateInDownLeft" data-wow-delay=".8s" data-wow-offset="60">Sketch</li>
+          <li class="wow rotateInDownLeft" data-wow-delay=".8s" data-wow-offset="60">Photoshop</li>
+          <li class="wow rotateInDownLeft" data-wow-delay=".8s" data-wow-offset="60">Illustrator</li>
+          <li class="wow rotateInDownLeft" data-wow-delay=".8s" data-wow-offset="60">InDesign</li>
+          <li class="wow rotateInDownLeft" data-wow-delay=".8s" data-wow-offset="60">Flash</li>
+          <li class="wow rotateInDownLeft" data-wow-delay=".8s" data-wow-offset="60">After Effects</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <h3 class="slide-title home">My Journey So far</h3>
+  <div class="row">
+    <ul class="what-ive-done">
+      <li class="col-md-4">
+        <div class="fa fa-suitcase fa-2x"></div>
+        <div class="count">
+          <span class="num">4</span><span>+</span>
+        </div>
+        <div class="main">Years Experience</div>
+      </li>
+     <li class="col-md-4">
+     <div class="fa fa-graduation-cap fa-2x"></div>
+        <div class="count">
+          <span class="num">30</span><span>+</span>
+        </div>
+        <div class="main">Online Certifications</div>
+      </li>
+      <li class="col-md-4">
+        <div class="fa fa-users fa-2x"></div>
+        <div class="count">
+          <span class="num">10</span><span>+</span>
+        </div>
+        <div class="main">Clients</div>
+      </li>
+    </ul>
+  </div>
+  <h3 class="slide-title home">Clients I've worked with</h3>
+    <div class="row">
+      <ul class="clients">
+        <li class="col-md-3"><img src="app/main/assets/img/tcs.png"></li>  
+        <li class="col-md-3"><img src="app/main/assets/img/citi.png"></li>
+        <li class="col-md-3"><img src="app/main/assets/img/fis.png"></li>
+        <li class="col-md-3"><img src="app/main/assets/img/virginmedia.png"></li>
+        <li class="col-md-3"><img src="app/main/assets/img/uw.png"></li>
+        <li class="col-md-3"><img src="app/main/assets/img/google.png"></li>
+        <li class="col-md-3"><img src="app/main/assets/img/fresh.png"></li>
+        <li class="col-md-3 your-company wow bounceIn" data-wow-delay="1s" data-wow-offset="60">Your Company Here</li>
+      </ul>
+    </div>  
+    <div class="row text-center">
+      <a id="view-portfolio" href="#/portfolio" class="btn btn-primary">View Portfolio</a>
+    </div>
+</section>
+</div>  
