@@ -22,6 +22,9 @@
           controller: 'AboutController',
           controllerAs: 'about'
       })
+      .when('/portfolio/hop', {
+          templateUrl: 'app/components/hop/hop.html'
+      })
       .otherwise({
           redirectTo: '/'
       });

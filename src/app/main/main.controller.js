@@ -19,7 +19,7 @@
           changeHeaderState(3);
       } else if( (location+"").indexOf('portfolio') > 0) {   
           //Beginning
-          changeHeaderState(slideState);
+          changeHeaderState(2);
       } 
       else
       {
@@ -43,18 +43,18 @@
       }
 
       $('html,body').bind('scroll mousedown DOMMouseScroll mousewheel keyup', function(e){
-            if ( e.which > 0 || e.type == 'mousedown' || e.type == 'mousewheel' ){
+            if ( e.which > 0 || e.type === 'mousedown' || e.type === 'mousewheel' ){
               $('html,body').stop();
             }
        });
   };
   
   function changeHeaderState(state){
-      if(state==3)
+      if(state===3)
       {
         $('header').addClass('state2').addClass('state3');
       }
-      else if(state==2)
+      else if(state===2)
       {
         $('header').addClass('state2').removeClass('state3');
       }
@@ -62,6 +62,6 @@
       {
        $('header').removeClass('state3');
       }
-    };
+    }
 
 })();

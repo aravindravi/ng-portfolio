@@ -8,11 +8,12 @@
             //new WOW().init();
           $('#projects li').children().removeClass('fade');
           $('#projects').removeClass('project-open');
-          if($('.videoFrame') != null)
-          $('.videoFrame').attr('src', '');
+          if($('.videoFrame') !== null) {
+            $('.videoFrame').attr('src', '');
+          }
         });
       $scope.isActive = function(path) {
           return path === $location.path();
-      }
+      };
     });
 })();

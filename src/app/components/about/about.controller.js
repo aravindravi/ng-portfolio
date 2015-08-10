@@ -6,7 +6,7 @@
     .controller('AboutController', AboutController);
 
   /** @ngInject */
-  function AboutController($timeout) {
+  function AboutController() {
   	
   }
 })();

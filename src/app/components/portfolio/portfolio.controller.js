@@ -6,7 +6,7 @@
     .controller('PortfolioController', PortfolioController);
 
   /** @ngInject */
-  function PortfolioController($timeout) {
+  function PortfolioController() {
 
       	      
   }
