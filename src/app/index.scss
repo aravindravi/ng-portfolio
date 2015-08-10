@@ -5,21 +5,32 @@
 /* COLORS */
 $primary-color: #2C858D;
 $dark-gray: #A9A9A9;
-$light-gray: #EFEFEF; 
+$light-gray: #EFEFEF;
+$white: #FFFFFF;
+$black: #000000; 
 
 /* TYPOGRAPHY */
 $assetPath : "/assets/images";
 
 /* MAIN IMAGES */
 $mainImg: "main/assets/img";
+$hopLoc: "components/hop";
+$recallLoc: "components/recall";
 /*
 * FONTS
 */
 
+/* MIXINS */
+@mixin transition($duration...) {
+    -moz-transition:    $duration;
+    -o-transition:      $duration;
+    -webkit-transition: $duration;
+    transition:         $duration;
+}
 
 @font-face {
-font-family: Unisans;
-src: url("../assets/fonts/Unisans.otf") format("opentype");
+  font-family: Unisans;
+  src: url("../assets/fonts/Unisans.otf") format("opentype");
 }
 
 /*
@@ -114,7 +125,7 @@ img
   width: 140px;
   height: 140px;
   padding-top: 56px;
-  background: #ffffff;
+  background: $white;
 }
 .modal-lg .ix .img-circle
 {
@@ -137,7 +148,7 @@ img
   padding: 6px;
   width: 140px;
   height: 140px;
-  background: #ffffff;
+  background: $white;
   padding-top: 56px;
 }
 .modal-lg .front-end .icons > div
@@ -234,22 +245,22 @@ header.state2 .menu > .active > a:focus {
 }
 .white-btn
 {
-  border: 2px solid #ffffff;
+  border: 2px solid $white;
   color: #fff;
   margin-bottom: 40px;
   padding: 20px 40px;
+  background-color: transparent;
+  &:hover, &:active, &:focus {
+    background: $white;
+    color: $primary-color;
+    border-color: $white;
+  }
+  @include transition(300ms);
 }
-.white-btn:hover, 
-.white-btn:active,
-.white-btn:focus
-{
-  background: #fff;
-  color: $primary-color;
-  border-color: #ffffff;
-}
+
 .text-white
 {
-  color: #ffffff;
+  color: $white;
 }
 .text-gray
 {
@@ -263,12 +274,9 @@ header.state2 .menu > .active > a:focus {
 {
   margin-top: 5px;
   margin-bottom: 6px;
-  color: #ffffff;
+  color: $white;
   float: left;
-  transition: 300ms;
-  -webkit-transition: 300ms;
-  -moz-transition: 300ms;
-  -o-transition: 300ms;
+  @include transition(300ms);
   border: 1px solid $primary-color;
   padding: 3px 7px 0px 6px;
   background-size: contain;
@@ -299,13 +307,10 @@ header.state2 .menu > .active > a:focus {
   padding-left: 0;
   font-size: 18px;
   font-weight: bold;
-  color: #ffffff;
+  color: $white;
   border-bottom: 2px solid transparent;
   padding: 6px 0;
-  transition: 300ms;
-  -webkit-transition: 300ms;
-  -moz-transition: 300ms;
-  -o-transition: 300ms;
+  @include transition(300ms);
 }
 
 .menu > li > a:hover,
@@ -317,7 +322,7 @@ header.state2 .menu > .active > a:focus {
 .menu > .active > a,
 .menu > .active > a:hover,
 .menu > .active > a:focus {
-  border-bottom-color: #ffffff;
+  border-bottom-color: $white;
 
 }
 section
@@ -383,7 +388,7 @@ section > .fp-tableCell
 }
 #experience
 {
-  background: #ffffff ;
+  background: $white ;
 }
 #about
 {
@@ -435,10 +440,7 @@ section > .fp-tableCell
   -webkit-padding-start: 0;
   margin-bottom: 0;
   width: 100%;
-  transition: 500ms;
-  -webkit-transition: 500ms;
-  -moz-transition: 500ms;
-  -o-transition: 500ms;
+  @include transition(500ms);
   margin: auto;
 }
 #projects > li:last-child
@@ -481,11 +483,26 @@ section > .fp-tableCell
 }
 #projects #hop
 {
-  background-image: url('../img/carousel/hop.jpg');
+  background-image: url(#{$hopLoc}/img/hop.jpg);
+  .phone {
+    background: url(#{$hopLoc}/img/hop-phone.png) no-repeat 100% 50%;
+    background-size: 96% auto;
+    background-position: left;
+  }
 }
 #projects #recall
 {
-  background-image: url('../img/carousel/recall.jpg');
+  background-image: url(#{$recallLoc}/img/recall.jpg);
+  .phone {
+    background: url(#{$recallLoc}/img/recall-phone.png) no-repeat 100% 50%;
+    background-size: 96% auto;
+    background-position: left;
+  }
+  .watch {
+    background: url(#{$recallLoc}/img/recall-watch.png) no-repeat 100% 50%;
+    background-size: 96% auto;
+    background-position: left;
+  }
 }
 #projects #milan
 {
@@ -528,7 +545,7 @@ section > .fp-tableCell
 #projects .head1
 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  color: #ffffff;
+  color: $white;
   padding-top: 40px;
 }
 #projects #hop .head1,
@@ -545,24 +562,8 @@ section > .fp-tableCell
 {
   font-size: 48px;
 }
-#projects #hop .phone
-{
-  background: url('../img/carousel/hop-phone.png') no-repeat 100% 50%;
-  background-size: 96% auto;
-  background-position: left;
-}
-#projects #recall .phone
-{
-  background: url('../img/carousel/recall-phone.png') no-repeat 100% 50%;
-  background-size: 96% auto;
-  background-position: left;
-}
-#projects #recall .watch
-{
-  background: url('../img/carousel/recall-watch.png') no-repeat 100% 50%;
-  background-size: 96% auto;
-  background-position: left;
-}
+
+
 #projects #milan .phone
 {
   background: url('../img/carousel/milan-phone.gif') no-repeat 100% 50%;
@@ -591,7 +592,7 @@ section > .fp-tableCell
   font-size: 48px;
   font-family: "Unisans","Open Sans", Helvetica, Arial, sans-serif;
   padding-bottom: 20px;
-  color: #ffffff;
+  color: $white;
 }
 #projects #hop .head1
 {
@@ -617,11 +618,7 @@ section > .fp-tableCell
     animation-delay: 2s;
 }
 .modal.fade {
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
+    @include transition(1s);
 }
 .modal-dialog {
   margin-top: 50px;
@@ -639,11 +636,11 @@ section > .fp-tableCell
 }
 .overlay.overlay-white
 {
-    background-color: #ffffff;
+    background-color: $white;
 }
 .overlay.overlay-black
 {
-    background-color: #000000;
+    background-color: $black;
 }
 
 /*
@@ -740,10 +737,7 @@ section > .fp-tableCell
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   opacity: 0.4;
-    transition: 300ms;
-  -webkit-transition: 300ms;
-  -moz-transition: 300ms;
-  -o-transition: 300ms;
+  @include transition(300ms);
 }
 #stats .clients > li > img:hover
 {
@@ -759,7 +753,7 @@ section > .fp-tableCell
 }
 #home .profile-caption
 {
-  color: #ffffff;
+  color: $white;
   padding-top: 400px;
   z-index: 4;
   position: relative;
@@ -776,10 +770,7 @@ section > .fp-tableCell
 .social .links .fa
 {
   color: #A6A6A6;
-  transition: 300ms;
-  -webkit-transition: 300ms;
-  -moz-transition: 300ms;
-  -o-transition: 300ms;
+  @include transition(300ms);
 }
 .social .links .fa:hover
 {
@@ -791,7 +782,7 @@ section > .fp-tableCell
   display: inline-block;
   z-index: 4;
   position: relative;
-  color: #ffffff;
+  color: $white;
   -webkit-padding-start: 0px;
 }
 .social > ul > li
@@ -810,10 +801,7 @@ section > .fp-tableCell
   text-align: center;
   /* line-height: 40px; */
   color: #A6A6A6;
-  transition: 300ms;
-  -webkit-transition: 300ms;
-  -moz-transition: 300ms;
-  -o-transition: 300ms;
+  @include transition(300ms);
 }
 .social > ul > li > a:hover
 {
@@ -831,7 +819,7 @@ footer
 footer .social  h3
 {
   display: inline-block;
-  color: #ffffff;
+  color: $white;
 }
 footer .social > ul
 {
@@ -849,176 +837,8 @@ footer .social > ul
   z-index: 1;
 }
 
+/* PORTFOLIO */
 
-
-/*
- * PORTFOLIO
- 
-
-.projects
-{
-  list-style: none;
-  -webkit-padding-start: 0;
-}
-.projects > li
-{
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-.projects > li  > a
-{
-  color: #000000;
-text-decoration: none;
-}
-.projects > li > div > .title
-{
-  font-size: 18px;
-}
-.projects > li > div > a
-{
-  color: #000000;
-  text-decoration: none;
-}
-.projects > li > div, .projects > li > div .thumbnails
-{
-  transition: 400ms;
-  opacity: 1;
-}
-.projects > li > div:hover .thumbnails
-{
-  padding-top: 0;
-  background-size: 110%;
-}
-.projects:hover > li > div 
-{
-  //opacity: 0.2;
-}
-.projects > li:hover > div 
-{
-  opacity: 1;
-}
-.project-details
-{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  border: none;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  text-align: center;
-  //transform: translateY(100%);
-  opacity:0;
-  transition: 300ms; 
-  -webkit-transition: 300ms;
-  border: none;
-  cursor: pointer;
-}
-.project-details > div
-{
-  background-color: rgba(0,0,0,0.6);
-  color: #ffffff;
-  padding: 12px;
-  height: 70%;
-}
-.project-details > div > .plus
-{
-  font-size: 28px;
-  border: 2px solid #ffffff;
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  line-height: 58px;
-  margin-top: 20px;
-}
-.projects h3
-{
-  font-weight: bold;
-  margin-bottom: 6px;
-  margin-top: 4px;
-}
-.projects .desc
-{
-  text-align: center;
-  background: #fff;
-  padding: 6px;
-}
-.projects .desc h3
-{
-    color: $primary-color;
-}*/
-.thumbnails
-{
-  background-color: #ffffff;
-  border: none;
-  height: 180px;
-  background-size: cover;
-  background-position: 50% 0;
-}
-.thumbnails.synku
-{
-  background-image: url('../img/synku.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.thumbnails.glass
-{
-  background-image: url('../img/glass/cover.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.thumbnails.hop
-{
-  background-image: url('../img/hop/cover.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.thumbnails.milan
-{
-  background-image: url('../img/milan/milan2.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.thumbnails.smart-statement
-{
-  background-image: url('../img/smartstatement/smart-statement.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.thumbnails.telecom
-{
-  background-image: url('../img/telecom/telecom.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.thumbnails.challenge
-{
-  background-image: url('../img/challenge/challenge.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.thumbnails.gcm
-{
-  background-image: url('../img/gcm/gcm.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.thumbnails.language
-{
-  background-image: url('../img/language/language2.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.ongoing
-{
-  text-align: center;
-  padding-top: 20px;
-}
 /*
 * EXPERIENCE 
 */
@@ -1155,7 +975,7 @@ text-decoration: none;
 .fun-facts > li:nth-child(4), 
 .fun-facts > li:nth-child(6)
 {
-  //background-color: #ffffff;
+  //background-color: $white;
 }
 .fun-facts > li:nth-child(1), 
 .fun-facts > li:nth-child(3), 
@@ -1181,7 +1001,7 @@ text-decoration: none;
 }
 .traits > li:nth-child(even)
 {
-  background-color: #ffffff;
+  background-color: $white;
 }
 .traits > li p, .tenets > li p
 {
@@ -1248,7 +1068,7 @@ text-decoration: none;
   border-radius: 100%;
   text-align: center;
   color: #fff;
-  background-color: #000000;
+  background-color: $black;
 }
 .timeline .details
 {
@@ -1276,15 +1096,12 @@ text-decoration: none;
   top: 0;
   left: 0;
   background-color: rgba(0,0,0,0.6);
-  color: #ffffff;
+  color: $white;
   padding: 6px;
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: 400ms;
-  -webkit-transition: 400ms;
-  -moz-transition: 400ms;
-  -o-transition: 400ms;
+  @include transition(300ms);
 }
 .trait-details:hover
 {
@@ -1292,7 +1109,7 @@ text-decoration: none;
 }
 .traits > li:nth-child(2), .traits > li:nth-child(3), .traits > li:nth-child(6), .traits > li:nth-child(7)
 {
-  background-color: #ffffff;
+  background-color: $white;
 }
 .traits > li:nth-child(1), .traits > li:nth-child(4), .traits > li:nth-child(5), .traits > li:nth-child(8)
 {
@@ -1544,7 +1361,7 @@ text-decoration: none;
   }
   .traits > li:nth-child(2), .traits > li:nth-child(4), .traits > li:nth-child(5), .traits > li:nth-child(7)
   {
-    background-color: #ffffff;
+    background-color: $white;
   }
   .traits > li:nth-child(1), .traits > li:nth-child(3), .traits > li:nth-child(6), .traits > li:nth-child(8)
   {
