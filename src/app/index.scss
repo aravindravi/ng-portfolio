@@ -236,7 +236,12 @@ section > .fp-tableCell
   margin-top: 50px;
 }
 .sub-nav {
-  background: $light-gray;
+  background: rgba(0,0,0,0.4);
+  color: $white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
   padding: 10px 0;
 }
 .slide-title

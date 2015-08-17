@@ -3,11 +3,14 @@
 
   angular
     .module('arApp')
-    .directive('SubnavController', function() {
-      return {
-        restrict: 'E',
-        templateURL: 'app/components/subnav/subnav.html'
-      }
-        	      
-  }
+    .directive('subNav', function() {
+        return {
+          restrict: 'E',
+          templateUrl: 'app/components/subnav/subnav.html',
+          controller: 'SubnavController'
+        };
+    })
+    .controller('SubnavController', function () {
+
+    });
 })();
