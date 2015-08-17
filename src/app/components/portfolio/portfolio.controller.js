@@ -6,8 +6,9 @@
     .controller('PortfolioController', PortfolioController);
 
   /** @ngInject */
-  function PortfolioController() {
-
+  function PortfolioController($window, $rootScope) {
+  	angular.element($window).unbind("scroll");
+	$rootScope.changeHeaderState(3);
       	      
   }
 })();

@@ -2,9 +2,9 @@
 	.hero {
 		background-image: url(#{$hopLoc}/img/hop.jpg);
 		background-size: 100% 120%;
-    -webkit-background-size: 100% 120%;
-    -moz-background-size: 100% 120%;
-    -o-background-size: 100% 120%;
+	    -webkit-background-size: 100% 120%;
+	    -moz-background-size: 100% 120%;
+	    -o-background-size: 100% 120%;
 		color: $white;
 		  .phone {
 		    background: url(#{$hopLoc}/img/hop-phone.png) no-repeat 100% 50%;
