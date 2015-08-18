@@ -19,7 +19,6 @@
 			h2 {
 			  font-size: 48px;
 			  font-family: $unisans;
-			  margin-top: 40px;
 			  line-height: 1.5em;
 			}
 			.phone {
@@ -28,10 +27,7 @@
 		    background-position: left;
 		  }
 	}
-	.project-intro {
-  	background-color: $light-gray;
-  	height: 60px;
-  }
+	
 }
 @media (max-width: 768px) {
 	.page-wrapper.hop {
