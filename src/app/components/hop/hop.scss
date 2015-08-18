@@ -1,4 +1,7 @@
 .page-wrapper.hop {
+	section {
+		margin-top: 40px;
+	}
 	.hero {
 		background-image: url(#{$hopLoc}/img/hop.jpg);
 		background-size: 100% 120%;
@@ -27,7 +30,15 @@
 		    background-position: left;
 		  }
 	}
-	
+	.product {
+
+		p {
+			padding-top: 100px;
+			font-size: 2em;
+			font-family: $opensans;
+			font-weight: bolder;
+		}
+	}
 }
 @media (max-width: 768px) {
 	.page-wrapper.hop {

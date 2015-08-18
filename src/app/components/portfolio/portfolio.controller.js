@@ -8,7 +8,6 @@
   /** @ngInject */
   function PortfolioController($window, $rootScope) {
   	angular.element($window).unbind("scroll");
-	$rootScope.changeHeaderState(3);
-      	      
+	  $rootScope.changeHeaderState(3);
   }
 })();
