@@ -6,7 +6,7 @@
 $primary-color: #2C858D;
 $secondary-color: #D9C539;
 $dark-gray: #A9A9A9;
-$light-gray: #EFEFEF;
+$light-gray: #F6F6F6;
 $white: #FFFFFF;
 $black: #000000; 
 
@@ -44,6 +44,7 @@ $opensans: "Open Sans", Helvetica, Arial, sans-serif;
 html,
 body {
   position: relative;
+  line-height: 1.6;
 }
 h1,h2,h3,h4,h5,h6
 {
@@ -238,14 +239,14 @@ section > .fp-tableCell
   font-size: 1.5em;
   section h3 {
       font-size: 2.5em;
-      font-family: $opensans;
+      font-family: $unisans;
       font-weight: 600;
-      color: $primary-color;
-      margin-top: 40px;
+      margin-top: 60px;
+      margin-bottom: 40px;
+      font-weight: lighter;
     }
     .section-title {
       text-align: center;
-      color: $primary-color;
     }
   .project-intro {
     background: rgba(0,0,0,0.4);
@@ -261,13 +262,26 @@ section > .fp-tableCell
       font-family: $opensans;
       font-weight: 600;
       padding-left: 10px; 
-      color: $secondary-color;
     }
 
     .fa {
       color: $secondary-color;
     }
   }
+}
+.gray-box p {
+  background: $light-gray;
+  padding: 20px;
+  font-weight: lighter;
+  min-height: 66px; 
+}
+.gray-box .lnr {
+  display: block;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.lnr.lnr-lg {
+  font-size: 2em;
 }
 .sub-nav {
   background: rgba(0,0,0,0.4);
@@ -286,6 +300,9 @@ section > .fp-tableCell
 {
   color: $primary-color;
   margin-top: 80px;
+}
+.sub-title {
+  padding-top: 20px;
 }
 .slide-title.first
 {

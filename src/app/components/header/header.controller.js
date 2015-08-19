@@ -3,7 +3,7 @@
 
   angular
     .module('arApp')
-    .directive('ngHeader', function($location) {
+    .directive('ngHeader', function() {
     	return {
     		restrict: 'E',
     		controller: 'HeaderController',
