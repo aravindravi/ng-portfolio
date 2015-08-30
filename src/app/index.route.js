@@ -25,6 +25,9 @@
       .when('/portfolio/hop', {
           templateUrl: 'app/components/hop/hop.html'
       })
+      .when('/portfolio/recall', {
+          templateUrl: 'app/components/recall/recall.html'
+      })
       .otherwise({
           redirectTo: '/'
       });

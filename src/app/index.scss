@@ -36,6 +36,7 @@ $recallLoc: "components/recall";
 }
 $unisans: "unisans","Open Sans", Helvetica, Arial, sans-serif;
 $opensans: "Open Sans", Helvetica, Arial, sans-serif;
+$tertiary-font: Georgia, "Open Sans", Helvetica, Arial, sans-serif;
 
 /*
  * COMMON
@@ -84,6 +85,9 @@ hr
 {
   margin-left: 15px;
   margin-right: 15px;
+}
+p {
+  font-weight: lighter;
 }
 header
 {
@@ -152,7 +156,7 @@ header.state2 .menu > .active > a:focus {
     color: $primary-color;
     border-color: $white;
   }
-  @include transition(300ms);
+  @include transition(200ms);
 }
 
 .text-white
@@ -162,6 +166,9 @@ header.state2 .menu > .active > a:focus {
 .text-gray
 {
   color: #A6A6A6;
+}
+.text-big {
+  font-size: 1.5em;
 }
 .text-turquoise
 {
@@ -235,8 +242,34 @@ section > .fp-tableCell
   vertical-align: initial;
 }
 .page-wrapper {
-  margin-top: 50px;
   font-size: 1.5em;
+  section {
+    margin-top: 40px;
+  }
+  h3 {
+     display: inline-block;
+      font-family: $opensans;
+      font-weight: 600;
+      padding-left: 10px; 
+  }
+  h4 {
+    font-weight: normal;
+    font-family: $unisans;
+    font-size: 1.5em;
+    padding: 20px 0;
+  }
+  p {
+    font-weight: lighter;
+  }
+  ul {
+    list-style: none;
+    -webkit-padding-start: 0;
+    padding-top: 20px;
+  }
+  img {
+    padding-bottom: 30px;
+  }
+
   section h3 {
       font-size: 2.5em;
       font-family: $unisans;
@@ -245,41 +278,56 @@ section > .fp-tableCell
       margin-bottom: 40px;
       font-weight: lighter;
     }
-    .section-title {
-      text-align: center;
+  .overlay {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background-color: rgba(0,0,0,0.4);
+  }
+  .overlay+div {
+    position: relative;
+  }
+  .toc .toc-list {
+    li {
+      height: 120px;
+      margin-bottom: 30px;
     }
+  }
+  .section-title {
+    text-align: center;
+  }
   .project-intro {
     background: rgba(0,0,0,0.4);
     margin-top: 20px;
     padding: 10px 0 0 0;
-    
-    ul {
-      -webkit-padding-start: 0;
-      list-style: none;
-    }
-    h3 {
-      display: inline-block;
-      font-family: $opensans;
-      font-weight: 600;
-      padding-left: 10px; 
-    }
 
     .fa {
       color: $secondary-color;
     }
   }
 }
-.gray-box p {
-  background: $light-gray;
-  padding: 20px;
-  font-weight: lighter;
-  min-height: 66px; 
+.gray-box {
+    padding-top: 20px;
+  }
+.gray-box {
+  p {
+    font-weight: lighter;
+    color: $black;
+    background: $light-gray;
+    padding: 20px;
+    font-weight: lighter;
+    min-height: 66px; 
+  }
+  .lnr {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+  }
 }
-.gray-box .lnr {
-  display: block;
-  text-align: center;
-  padding-bottom: 10px;
-}
+
+
 .lnr.lnr-lg {
   font-size: 2em;
 }
@@ -366,10 +414,6 @@ section > .fp-tableCell
   margin-top: 60px;
   color: #A6A6A6;
   text-align: center;
-}
-#show-more
-{
-  margin: 50px 0;
 }
 #projects
 {
@@ -588,6 +632,9 @@ section > .fp-tableCell
   margin-top: 40px;
   font-size: 21px;
   -webkit-padding-start: 0px;  
+  .lnr {
+    font-size: 1.2em;
+  }
 }
 #intro .snippets h3
 {
@@ -622,13 +669,14 @@ section > .fp-tableCell
 }
 #stats .what-ive-done .count
 {
-  font-size: 56px;
+  font-size: 3em;
   color: $primary-color;
   font-family: $unisans;
 }
 #stats .what-ive-done .main
 {
-  font-size: 18px;
+  font-size: 1.2em;
+  font-weight: lighter;
 }
 #stats .what-ive-done .fa
 {
@@ -888,10 +936,18 @@ footer .social > ul
 {
   //background-color: #f6f6f6;
 }
-#view-portfolio
+#view-portfolio, #show-more
 {
   margin: 20px 0;
   padding: 20px 50px;
+  background-color: transparent;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  @include transition(200ms);
+  &:hover, &:active, &:focus {
+    background-color: $primary-color;
+    color: $white;
+  }
 }
 .traits, .tenets
 {
@@ -1236,8 +1292,8 @@ footer .social > ul
   }
   #intro .snippets p
   {
-    font-size: 14px;
     font-family: $opensans;
+    font-weight: lighter;
     color: #A6A6A6;
   }
   #intro .pic-container

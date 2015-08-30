@@ -1,29 +1,29 @@
-$hop-primary-color: #75C03A;
+$recall-primary-color: #FFA000;
 
-.page-wrapper.hop {
-	h3, h4 {
-		color: $hop-primary-color;
-	}
+.page-wrapper.recall {
 	margin-top: 50px;
+	h3, h4 {
+		color: $recall-primary-color;
+	}
 	
 	.gray-box {
-
 		.lnr {
-			color: $hop-primary-color;
+			color: $recall-primary-color;
 		}
 		p {
-			border-left: 4px solid $hop-primary-color;
+			border-left: 4px solid $recall-primary-color;
 		}
 	}
+	.toc .lnr {
+      color: $recall-primary-color;
+    }
 	.hero {
-		background: url(#{$hopLoc}/img/hop.jpg) #000 fixed;
+		background: url(#{$recallLoc}/img/recall.jpg) #000 fixed;
 		background-size: 100% 120%;
-	    -webkit-background-size: 100% 120%;
-	    -moz-background-size: 100% 120%;
-	    -o-background-size: 100% 120%;
+		background-position-y: 100%;
 		color: $white;
 		  .phone {
-			    background: url(#{$hopLoc}/img/hop-phone.png) no-repeat 100% 50%;
+			    background: url(#{$recallLoc}/img/recall-phone.png) no-repeat 100% 50%;
 			    background-size: 96% auto;
 			    background-position: left;
 			}
@@ -44,11 +44,13 @@ $hop-primary-color: #75C03A;
 			font-size: 2em;
 			font-family: $opensans;
 			font-weight: bolder;
-			color: $hop-primary-color;
+			color: $recall-primary-color;
 		}
 	}
 	.problem {
-		background: url(components/hop/img/hop.jpg) fixed;
+		background: url(components/recall/img/recall.jpg) fixed;
+		background-size: 100% 120%;
+		background-position-y: 0%;
 		color: $white;
 		padding-bottom: 40px;
 		h3 {
@@ -63,7 +65,7 @@ $hop-primary-color: #75C03A;
 			font-family: $unisans;
 			font-size: 1.5em;
 			padding-top: 20px;
-			color: $hop-primary-color;
+			color: $recall-primary-color;
 		}
 		.lnr {
 			color: $white;
@@ -80,40 +82,10 @@ $hop-primary-color: #75C03A;
 			font-size: 1.5em;
 		}
 	}
-	.how-i-saw {
-		.questions > li > p {
-			height: 140px;
-		}
-	}
-	.toc .lnr {
-      color: $hop-primary-color;
-    }
-	.user-research {
-		.lnr {
-			color: $hop-primary-color;
-			padding-top: 20px;
-		}
-		.research-findings > li > p{
-			height: 140px;
-		}
-	}
-	.analysis {
-		.competitive-analysis {
-			p {
-				padding: 0;
-			}
-			h4 {
-				padding: 10px 0 0 0;
-			}
-		}
-		.design-considerations > li > p{
-			height: 140px;
-		}
-		
-	}
+	
 }
 @media (max-width: 768px) {
-	.page-wrapper.hop {
+	.page-wrapper.recall {
 		.hero {
 			h1 {
 				font-size: 56px;
@@ -129,7 +101,7 @@ $hop-primary-color: #75C03A;
 }
 
 @media (max-width: 480px) {
-	.page-wrapper.hop {
+	.page-wrapper.recall {
 		.hero {
 			h1 {
 				font-size: 36px;
