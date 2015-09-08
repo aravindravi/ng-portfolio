@@ -30,6 +30,7 @@ $recallLoc: "components/recall";
 /*
 * TYPOGRAPHY
 */
+
 @font-face {
   font-family: Unisans;
   src: url("../assets/fonts/Unisans.otf") format("opentype");
@@ -216,7 +217,7 @@ header.state2 .menu > .active > a:focus {
   font-weight: bold;
   color: $white;
   border-bottom: 2px solid transparent;
-  padding: 6px 0;
+  padding: 6px 0 0 0;
   @include transition(300ms);
 }
 
@@ -625,36 +626,50 @@ section > .fp-tableCell
 {
   color: $primary-color;
 }
-#intro .snippets
+#intro .snippets {
+  margin-top: 40px;
+}
+.snippets
 {
   list-style: none;
   text-align: center;
-  margin-top: 40px;
   font-size: 21px;
   -webkit-padding-start: 0px;  
-  .lnr {
-    font-size: 1.2em;
-  }
 }
-#intro .snippets h3
+.snippets h3
 {
   color: #A6A6A6;
   font-size: 21px;
 }
-#intro .snippets p
+.snippets p
 {
   font-size: 16px;
   font-family: $opensans;
   color: #A6A6A6;
 }
-#intro .snippets h3,
-#intro .snippets > li > .fa
+.snippets h3,
+.snippets > li > .fa
 {
   color: $primary-color;
 }
-#intro .snippets .fa
+.snippets .fa
 {
     vertical-align: 30%;
+}
+.snippets.trivia {
+  padding-top: 30px;
+  h4 {
+    display: inline-block;
+  }
+}
+.snippets.what-i-do {
+  li {
+    min-height: 220px;
+    margin-bottom: 20px;
+  }
+  .lnr {
+    font-size: 2em;
+  }
 }
 
 #intro .profile-pic
@@ -1281,16 +1296,12 @@ footer .social > ul
     line-height: 1.8em;
     padding-top: 12px;
   }
-  #intro .snippets h4
+  .snippets h4
   {
     color: $primary-color;
     font-size: 18px;
   }
-  #intro .snippets
-  {
-    margin-top: 60px;
-  }
-  #intro .snippets p
+  .snippets p
   {
     font-family: $opensans;
     font-weight: lighter;

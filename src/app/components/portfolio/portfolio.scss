@@ -1,3 +1,14 @@
 .page-wrapper.portfolio {
-
+	.hop-video {
+		max-width: 100%;
+	    padding: 15% 5%;
+	    background-image: url(components/hop/img/hop-phone.png);
+	    /* display: none; */
+	    background-size: 100%;
+	    background-repeat: no-repeat;
+	    padding-bottom: 68px;
+	}
+	.hop-phone {
+		margin-top: 60px;
+	}
 }
