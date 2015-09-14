@@ -30,12 +30,27 @@ $hop-primary-color: #75C03A;
 	    -moz-background-size: 100% 120%;
 	    -o-background-size: 100% 120%;
 		color: $white;
-		  .phone {
+			.roles {
+				li {
+					text-align: center;
+				}
+				.lnr {
+					font-size: 1.5em;
+					color: $white;
+					font-size: 1.2em;
+					padding-bottom: 0;
+				}
+				p {
+					line-height: 1.4;
+					padding-top: 4px;
+				}
+			}
+		    .phone {
 			    background: url(#{$hopLoc}/img/hop-phone.png) no-repeat 100% 50%;
 			    background-size: 96% auto;
 			    background-position: left;
 			}
-		  h1 {
+		    h1 {
 			  font-size: 72px;
 			  font-family: $opensans;
 			  margin-top: 80px;
@@ -59,6 +74,11 @@ $hop-primary-color: #75C03A;
 			font-size: 2em;
 			font-family: $opensans;
 			
+		}
+	}
+	.wireframes {
+		.wireframe {
+			background: url(#{$hopLoc}/img/hop-phone.png) no-repeat 100% 50%;
 		}
 	}
 	.problem {
