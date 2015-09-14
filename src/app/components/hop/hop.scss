@@ -5,7 +5,15 @@ $hop-primary-color: #75C03A;
 		color: $hop-primary-color;
 	}
 	margin-top: 50px;
-	
+	video {
+		max-height: 94%;
+	    max-width: 90%;
+	    padding: 13% 4%;
+	    background-image: url(components/hop/img/hop-phone.png);
+	    background-size: 100%;
+	    background-repeat: no-repeat;
+	    padding-bottom: 64px;
+	}
 	.gray-box {
 
 		.lnr {
@@ -39,12 +47,18 @@ $hop-primary-color: #75C03A;
 			}
 	}
 	.product {
-		p {
+		h2 {
 			padding-top: 100px;
 			font-size: 2em;
 			font-family: $opensans;
 			font-weight: bolder;
 			color: $hop-primary-color;
+		}
+		p {
+			
+			font-size: 2em;
+			font-family: $opensans;
+			
 		}
 	}
 	.problem {
