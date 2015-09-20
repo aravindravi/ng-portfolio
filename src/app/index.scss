@@ -144,7 +144,19 @@ header.state2 .menu > .active > a:focus {
   border-radius: 0;
   font-size: 18px;
   font-family: $unisans;
+  margin: 20px 0;
+  padding: 20px 50px;
+  background-color: transparent;
+  border: 1px solid #2C858D;
+  color: #2C858D;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  &:hover, &:active, &:focus {
+    background-color: $primary-color;
+    color: $white;
+  }
 }
+
 .white-btn
 {
   border: 2px solid $white;

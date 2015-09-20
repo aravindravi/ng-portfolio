@@ -14,6 +14,23 @@ $hop-primary-color: #75C03A;
 	    background-repeat: no-repeat;
 	    padding-bottom: 64px;
 	}
+	.btn
+	{
+	  border-radius: 0;
+	  font-size: 18px;
+	  font-family: $unisans;
+	  margin: 20px 0;
+	  padding: 20px 50px;
+	  background-color: transparent;
+	  border: 1px solid $hop-primary-color;
+	  color: $hop-primary-color;
+	  -webkit-transition: 200ms;
+	  transition: 200ms;
+	  &:hover, &:active, &:focus {
+	    background-color: $hop-primary-color;
+	    color: $white;
+	  }
+	}
 	.gray-box {
 
 		.lnr {
@@ -62,6 +79,15 @@ $hop-primary-color: #75C03A;
 			}
 	}
 	.product {
+		.intro-snippets {
+			padding: 30px 0 60px 0;
+			p {
+				font-size: 1.5em;
+			}
+			.lnr {
+				color: $hop-primary-color;
+			}
+		}
 		h2 {
 			padding-top: 100px;
 			font-size: 2em;
@@ -78,11 +104,12 @@ $hop-primary-color: #75C03A;
 	}
 	.wireframes {
 		.wireframe {
-			background: url(#{$hopLoc}/img/hop-phone.png) no-repeat 100% 50%;
+			padding-bottom: 60px;
 		}
 	}
 	.problem {
-		background: url(components/hop/img/hop.jpg) fixed;
+		background: url(#{$hopLoc}/img/hop.jpg) fixed;
+		background-size: 100%;
 		color: $white;
 		padding-bottom: 40px;
 		h3 {
@@ -147,6 +174,39 @@ $hop-primary-color: #75C03A;
 	}
 	.ia {
 		
+	}
+	.visual-design {
+		.colors {
+			border: 1px solid #979797;
+			padding-top: 0;
+			display: inline-block;
+			li {
+				&:not(:first-child) {
+					margin-left: -6px;
+				}
+				width: 160px;
+				height: 160px;
+				padding: 64px 10px;
+				display: inline-block;
+			}
+			.c75C03A {
+				background-color: $hop-primary-color;
+				color: #FFFFFF;
+			}
+			.c000000 {
+				background-color: #000000;
+				color: #FFFFFF;
+			}
+			.c979797 {
+				background-color: #979797;
+			}
+			.cFFFFFF {
+				background-color: #FFFFFF;
+			}
+			.cDCDCDC {
+				background-color: #DCDCDC;
+			}
+		}
 	}
 }
 @media (max-width: 768px) {
