@@ -9,10 +9,11 @@ $hop-primary-color: #75C03A;
 		max-height: 94%;
 	    max-width: 90%;
 	    padding: 13% 4%;
-	    background-image: url(components/hop/img/hop-phone.png);
+	    background-image: url(#{$hopLoc}/img/hop-phone.png);
 	    background-size: 100%;
 	    background-repeat: no-repeat;
 	    padding-bottom: 64px;
+	  	min-height: 540px;
 	}
 	.btn
 	{

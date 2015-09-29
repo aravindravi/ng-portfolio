@@ -14,9 +14,9 @@ $black: #000000;
 $assetPath : "/assets/images";
 
 /* MAIN IMAGES */
-$mainImg: "main/assets/img";
-$hopLoc: "components/hop";
-$recallLoc: "components/recall";
+$mainImg: "/app/main/assets/img";
+$hopLoc: "/app/components/hop";
+$recallLoc: "/app/components/recall";
 
 
 /* MIXINS */
@@ -138,6 +138,19 @@ header.state2 .menu > .active > a,
 header.state2 .menu > .active > a:hover,
 header.state2 .menu > .active > a:focus {
   border-bottom-color: $primary-color;
+}
+.pad-bottom-40 {
+  padding-bottom: 40px;
+}
+.pad-top-40 {
+  padding-top: 40px;
+}
+.video-watch {
+  max-height: 94%;
+  max-width: 90%;
+  padding: 44% 16% 44% 13%;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .btn
 {
@@ -473,11 +486,6 @@ section > .fp-tableCell
 #projects #hop
 {
   background-image: url(#{$hopLoc}/img/hop.jpg);
-  .phone {
-    background: url(#{$hopLoc}/img/hop-phone.png) no-repeat 100% 50%;
-    background-size: 96% auto;
-    background-position: left;
-  }
 }
 #projects #recall
 {

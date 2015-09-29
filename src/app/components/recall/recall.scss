@@ -5,7 +5,41 @@ $recall-primary-color: #FFA000;
 	h3, h4 {
 		color: $recall-primary-color;
 	}
-	
+	.video-phone {
+		min-height: 540px;
+		max-height: 94%;
+	    max-width: 90%;
+	    padding: 13% 4%;
+	    background-size: 100%;
+	    background-repeat: no-repeat;
+	    padding-bottom: 64px;
+	}
+	.video-watch {
+		background-image: url(#{$recallLoc}/img/ideas.png);
+	}
+	.video-home {
+		background-image: url(#{$hopLoc}/img/home.png);
+	}
+	.video-filter {
+		background-image: url(#{$recallLoc}/img/filter.png);
+	}
+	.video-actionable {
+		background-image: url(#{$recallLoc}/img/actionable.png);
+	}
+	.video-ideas {
+		background-image: url(#{$recallLoc}/img/ideas.png);
+	}
+	.video-transcribe {
+		background-image: url(#{$recallLoc}/img/ideas.png);
+	}
+	.video-perspective {
+		background-color: #FFFFFF;
+		background-size: 100%; 
+		background-image: url(#{$recallLoc}/img/perspective.jpg);
+		background-repeat: no-repeat;
+		max-width: 100%;
+		min-height: 200px;
+	}
 	.gray-box {
 		.lnr {
 			color: $recall-primary-color;
@@ -22,6 +56,21 @@ $recall-primary-color: #FFA000;
 		background-size: 100% 120%;
 		background-position-y: 100%;
 		color: $white;
+		.roles {
+				li {
+					text-align: center;
+				}
+				.lnr {
+					font-size: 1.5em;
+					color: $white;
+					font-size: 1.2em;
+					padding-bottom: 0;
+				}
+				p {
+					line-height: 1.4;
+					padding-top: 4px;
+				}
+			}
 		  .phone {
 			    background: url(#{$recallLoc}/img/recall-phone.png) no-repeat 100% 50%;
 			    background-size: 96% auto;
@@ -39,16 +88,28 @@ $recall-primary-color: #FFA000;
 			}
 	}
 	.product {
-		p {
+		h2 {
 			padding-top: 100px;
 			font-size: 2em;
 			font-family: $opensans;
 			font-weight: bolder;
 			color: $recall-primary-color;
 		}
+		p {
+			
+			font-size: 2em;
+			font-family: $opensans;
+			
+		}
+
+	}
+	.wireframes {
+		.wireframe {
+			padding-bottom: 60px;
+		}
 	}
 	.problem {
-		background: url(components/recall/img/recall.jpg) #000 fixed;
+		background: url(#{$recallLoc}/img/recall.jpg) #000 fixed;
 		background-size: 100% 120%;
 		background-position-y: 0%;
 		color: $white;
