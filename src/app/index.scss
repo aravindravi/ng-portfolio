@@ -17,6 +17,7 @@ $assetPath : "/assets/images";
 $mainImg: "/app/main/assets/img";
 $hopLoc: "/app/components/hop";
 $recallLoc: "/app/components/recall";
+$crmLoc: "/app/components/crm";
 
 
 /* MIXINS */
@@ -486,6 +487,13 @@ section > .fp-tableCell
 {
   background-image: url(#{$hopLoc}/img/hop.jpg);
 }
+#projects #crm
+{
+  background-image: url(#{$crmLoc}/img/statement.jpg);
+  .responsive {
+    padding-top: 60px;
+  }
+}
 #projects #recall
 {
   background-image: url(#{$recallLoc}/img/recall.jpg);
@@ -550,7 +558,8 @@ section > .fp-tableCell
 #projects #milan .head1,
 #projects #usability .head1,
 #projects #statement .head1,
-#projects #synku .head1
+#projects #synku .head1,
+#projects #crm .head1
 {
   font-size: 72px;
 }
@@ -584,18 +593,24 @@ section > .fp-tableCell
 #projects #milan .head2,
 #projects #usability .head2,
 #projects #statement .head2,
-#projects #synku .head2
+#projects #synku .head2,
+#projects #crm .head2,
 {
   font-size: 48px;
   font-family: $unisans;
   padding-bottom: 20px;
   color: $white;
 }
-#projects #hop .head1
+#projects #crm .head2 {
+  font-size: 32px;
+}
+#projects #hop .head1,
+#projects #crm .head1
 {
     margin-left: -7px;
 }
-#projects #hop .head2
+#projects #hop .head2,
+#projects #crm .head2
 {
   margin-left: -4px;
 }

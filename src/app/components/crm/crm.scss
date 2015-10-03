@@ -1,0 +1,242 @@
+$crm-primary-color: #1EA5BB;
+
+.page-wrapper.crm {
+	h3, h4 {
+		color: $crm-primary-color;
+	}
+	margin-top: 50px;
+	video {
+		max-height: 94%;
+	    max-width: 90%;
+	    padding: 13% 4%;
+	    background-image: url(#{$crmLoc}/img/crm-phone.png);
+	    background-size: 100%;
+	    background-repeat: no-repeat;
+	    padding-bottom: 64px;
+	  	min-height: 540px;
+	}
+	.btn
+	{
+	  border-radius: 0;
+	  font-size: 18px;
+	  font-family: $unisans;
+	  margin: 20px 0;
+	  padding: 20px 50px;
+	  background-color: transparent;
+	  border: 1px solid $crm-primary-color;
+	  color: $crm-primary-color;
+	  -webkit-transition: 200ms;
+	  transition: 200ms;
+	  &:hover, &:active, &:focus {
+	    background-color: $crm-primary-color;
+	    color: $white;
+	  }
+	}
+	.gray-box {
+
+		.lnr {
+			color: $crm-primary-color;
+		}
+		p {
+			border-left: 4px solid $crm-primary-color;
+		}
+	}
+	.hero {
+		background: url(#{$crmLoc}/img/crm.jpg) #000 fixed;
+		background-size: 100% 120%;
+	    -webkit-background-size: 100% 120%;
+	    -moz-background-size: 100% 120%;
+	    -o-background-size: 100% 120%;
+		color: $white;
+			.roles {
+				li {
+					text-align: center;
+				}
+				.lnr {
+					font-size: 1.5em;
+					color: $white;
+					font-size: 1.2em;
+					padding-bottom: 0;
+				}
+				p {
+					line-height: 1.4;
+					padding-top: 4px;
+				}
+			}
+		    .phone {
+			    background: url(#{$crmLoc}/img/crm-phone.png) no-repeat 100% 50%;
+			    background-size: 96% auto;
+			    background-position: left;
+			}
+		    h1 {
+			  font-size: 72px;
+			  font-family: $opensans;
+			  margin-top: 80px;
+			}
+			h2 {
+			  font-size: 48px;
+			  font-family: $unisans;
+			  line-height: 1.5em;
+			}
+	}
+	.product {
+		.intro-snippets {
+			padding: 30px 0 60px 0;
+			p {
+				font-size: 1.5em;
+			}
+			.lnr {
+				color: $crm-primary-color;
+			}
+		}
+		h2 {
+			padding-top: 100px;
+			font-size: 2em;
+			font-family: $opensans;
+			font-weight: bolder;
+			color: $crm-primary-color;
+		}
+		p {
+			
+			font-size: 2em;
+			font-family: $opensans;
+			
+		}
+	}
+	.wireframes {
+		.wireframe {
+			padding-bottom: 60px;
+		}
+	}
+	.problem {
+		background: url(#{$crmLoc}/img/crm.jpg) fixed;
+		background-size: 100%;
+		color: $white;
+		padding-bottom: 40px;
+		h3 {
+			color: $white;
+		}
+		p {
+			font-weight: lighter;
+			padding-bottom: 40px;
+		}
+		h4 {
+			font-weight: bolder;
+			font-family: $unisans;
+			font-size: 1.5em;
+			padding-top: 20px;
+			color: $crm-primary-color;
+		}
+		.lnr {
+			color: $white;
+		}
+		.lnr-lg {
+			//border: 2px solid $white;
+			border-radius: 100px;
+			padding: 20px;
+		}
+		.lnr-holder {
+			//padding: 40px;
+		}
+		.icon-caption {
+			font-size: 1.5em;
+		}
+	}
+	.how-i-saw {
+		.questions > li > p {
+			height: 140px;
+		}
+	}
+	.toc .lnr {
+      color: $crm-primary-color;
+    }
+	.user-research {
+		.lnr {
+			color: $crm-primary-color;
+			padding-top: 20px;
+		}
+		.research-findings > li > p{
+			height: 140px;
+		}
+	}
+	.analysis {
+		.competitive-analysis {
+			p {
+				padding: 0;
+			}
+			h4 {
+				padding: 10px 0 0 0;
+			}
+		}
+		.design-considerations > li > p{
+			height: 140px;
+		}
+		
+	}
+	.ia {
+		
+	}
+	.visual-design {
+		.colors {
+			border: 1px solid #979797;
+			padding-top: 0;
+			display: inline-block;
+			li {
+				&:not(:first-child) {
+					margin-left: -6px;
+				}
+				width: 160px;
+				height: 160px;
+				padding: 64px 10px;
+				display: inline-block;
+			}
+			.c75C03A {
+				background-color: $crm-primary-color;
+				color: #FFFFFF;
+			}
+			.c000000 {
+				background-color: #000000;
+				color: #FFFFFF;
+			}
+			.c979797 {
+				background-color: #979797;
+			}
+			.cFFFFFF {
+				background-color: #FFFFFF;
+			}
+			.cDCDCDC {
+				background-color: #DCDCDC;
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.page-wrapper.crm {
+		.hero {
+			h1 {
+				font-size: 56px;
+    			padding-top: 40px;	
+			}
+			h2 {
+				font-size: 36px;
+	   			padding-bottom: 20px;
+	   			margin-top: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.page-wrapper.crm {
+		.hero {
+			h1 {
+				font-size: 36px;
+	    	margin-top: 30px;
+			}
+			h2 {
+				font-size: 18px;
+	    	padding-bottom: 20px;
+			}
+		}
+	}
+}
