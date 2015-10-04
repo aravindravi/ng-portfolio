@@ -3,7 +3,7 @@
 // endbower
 
 /* COLORS */
-$primary-color: #2C858D;
+$primary-color: #1EA5BB;
 $secondary-color: #D9C539;
 $dark-gray: #A9A9A9;
 $light-gray: #F6F6F6;
@@ -124,7 +124,13 @@ header.state3
 header.state2 .name
 {
   color: $primary-color;
+  &:hover {
+    color: #fff;
+    background-color: #1EA5BB;
+    cursor: pointer;
+  }
 }
+
 header.state2 .menu > li > a
 {
   color: #a6a6a6;
@@ -698,7 +704,7 @@ section > .fp-tableCell
     margin-bottom: 20px;
   }
   .lnr {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 
@@ -1329,7 +1335,7 @@ footer .social > ul
   .snippets h4
   {
     color: $primary-color;
-    font-size: 18px;
+    font-size: 1em;
   }
   .snippets p
   {

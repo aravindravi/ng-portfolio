@@ -5,16 +5,6 @@ $crm-primary-color: #1EA5BB;
 		color: $crm-primary-color;
 	}
 	margin-top: 50px;
-	video {
-		max-height: 94%;
-	    max-width: 90%;
-	    padding: 13% 4%;
-	    background-image: url(#{$crmLoc}/img/crm-phone.png);
-	    background-size: 100%;
-	    background-repeat: no-repeat;
-	    padding-bottom: 64px;
-	  	min-height: 540px;
-	}
 	.btn
 	{
 	  border-radius: 0;
@@ -42,7 +32,7 @@ $crm-primary-color: #1EA5BB;
 		}
 	}
 	.hero {
-		background: url(#{$crmLoc}/img/crm.jpg) #000 fixed;
+		background: url(#{$crmLoc}/img/statement.jpg) #000 fixed;
 		background-size: 100% 120%;
 	    -webkit-background-size: 100% 120%;
 	    -moz-background-size: 100% 120%;
@@ -97,10 +87,7 @@ $crm-primary-color: #1EA5BB;
 			color: $crm-primary-color;
 		}
 		p {
-			
-			font-size: 2em;
 			font-family: $opensans;
-			
 		}
 	}
 	.wireframes {

@@ -28,6 +28,9 @@
       .when('/portfolio/recall', {
           templateUrl: 'app/components/recall/recall.html'
       })
+      .when('/portfolio/crm', {
+          templateUrl: 'app/components/crm/crm.html'
+      })
       .otherwise({
           redirectTo: '/'
       });
