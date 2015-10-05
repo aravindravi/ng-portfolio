@@ -3,7 +3,8 @@
 // endbower
 
 /* COLORS */
-$primary-color: #15AEC7;
+$primary-color: #0DA6BF;
+//06ACC7, 15AEC7
 $secondary-color: #D9C539;
 $dark-gray: #A9A9A9;
 $light-gray: #F6F6F6;
@@ -86,6 +87,7 @@ img
 a {
   color: $primary-color;
   text-decoration: none;
+  font-weight: lighter;
 }
 hr
 {
