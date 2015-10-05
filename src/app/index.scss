@@ -83,6 +83,10 @@ img
 {
   max-width: 100%;
 }
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
 hr
 {
   margin-left: 15px;
@@ -321,7 +325,7 @@ section > .fp-tableCell
   .overlay+div {
     position: relative;
   }
-  .toc .toc-list {
+  .toc-list {
     li {
       height: 120px;
       margin-bottom: 30px;

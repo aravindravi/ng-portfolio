@@ -40,6 +40,9 @@ $recall-primary-color: #FFA000;
 		max-width: 100%;
 		min-height: 200px;
 	}
+	.toc-list .lnr {
+		color: $recall-primary-color;
+	}
 	.gray-box {
 		.lnr {
 			color: $recall-primary-color;
@@ -109,14 +112,8 @@ $recall-primary-color: #FFA000;
 		}
 	}
 	.problem {
-		background: url(#{$recallLoc}/img/recall.jpg) #000 fixed;
-		background-size: 100% 120%;
-		background-position-y: 0%;
-		color: $white;
+		
 		padding-bottom: 40px;
-		h3 {
-			color: $white;
-		}
 		p {
 			font-weight: lighter;
 			padding-bottom: 40px;
@@ -128,9 +125,6 @@ $recall-primary-color: #FFA000;
 			padding-top: 20px;
 			color: $recall-primary-color;
 		}
-		.lnr {
-			color: $white;
-		}
 		.lnr-lg {
 			//border: 2px solid $white;
 			border-radius: 100px;
@@ -139,9 +133,7 @@ $recall-primary-color: #FFA000;
 		.lnr-holder {
 			//padding: 40px;
 		}
-		.icon-caption {
-			font-size: 1.5em;
-		}
+		
 	}
 	
 }
