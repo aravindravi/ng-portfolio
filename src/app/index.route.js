@@ -3,7 +3,13 @@
 
   angular
     .module('arApp')
-    .config(routeConfig);
+    .config(routeConfig)
+    .run(function($rootScope, $location, $anchorScroll) {
+        $rootScope.$on( "$routeChangeSuccess", function(event, next, current) {
+          $anchorScroll();
+      });
+    });
+
 
   function routeConfig($routeProvider) {
     $routeProvider

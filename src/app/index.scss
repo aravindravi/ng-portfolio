@@ -3,8 +3,8 @@
 // endbower
 
 /* COLORS */
-$primary-color: #0DA6BF;
-//06ACC7, 15AEC7
+$primary-color: #0D9EBF;
+//06ACC7, 15AEC7, 0DA6BF
 $secondary-color: #D9C539;
 $dark-gray: #A9A9A9;
 $light-gray: #F6F6F6;
@@ -213,6 +213,14 @@ header.state2 .menu > .active > a:focus {
 {
   color: $primary-color
 }
+.overlay {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background-color: rgba(0,0,0,0.4);
+  }
 .adjust-height {
   height: 600px;
 }
@@ -316,14 +324,7 @@ section > .fp-tableCell
       margin-bottom: 40px;
       font-weight: lighter;
     }
-  .overlay {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      top: 0;
-      background-color: rgba(0,0,0,0.4);
-  }
+  
   .overlay+div {
     position: relative;
   }
@@ -706,8 +707,7 @@ section > .fp-tableCell
 }
 .snippets.what-i-do {
   li {
-    min-height: 220px;
-    margin-bottom: 20px;
+
   }
   .lnr {
     font-size: 1.5em;
