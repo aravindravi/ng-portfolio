@@ -3,8 +3,8 @@
 // endbower
 
 /* COLORS */
-$primary-color: #0D9EBF;
-//06ACC7, 15AEC7, 0DA6BF
+$primary-color: #1EA5BB;
+//06ACC7, 15AEC7, 0DA6BF, 0D9EBF
 $secondary-color: #D9C539;
 $dark-gray: #A9A9A9;
 $light-gray: #F6F6F6;
@@ -188,7 +188,8 @@ header.state2 .menu > .active > a:focus {
   border: 2px solid $white;
   color: #fff;
   margin-bottom: 40px;
-  padding: 20px 40px;
+  padding: 26px 60px;
+  font-size: 1em;
   background-color: transparent;
   &:hover, &:active, &:focus {
     background: $white;
