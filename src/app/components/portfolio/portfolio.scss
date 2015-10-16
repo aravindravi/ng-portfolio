@@ -15,4 +15,17 @@
 		background-image: url(#{$recallLoc}/img/ideas.png);
 		margin-top: 120px;
 	}
+	.more-projects {
+		img {
+			padding-bottom: 0;
+			max-height: 60px;
+		}
+		p.text-medium {
+			padding-top: 10px;
+			font-weight: normal;
+		}
+		p+p {
+			font-size: 0.8em;
+		}
+	}
 }

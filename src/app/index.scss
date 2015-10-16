@@ -210,9 +210,12 @@ header.state2 .menu > .active > a:focus {
 .text-big {
   font-size: 1.5em;
 }
-.text-turquoise
+.text-primary
 {
   color: $primary-color
+}
+.text-medium {
+  font-weight: normal;
 }
 .overlay {
       position: absolute;
