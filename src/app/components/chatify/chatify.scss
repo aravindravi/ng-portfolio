@@ -149,26 +149,9 @@ $chatify-primary-color: #16a086;
 			height: 140px;
 		}
 	}
-	.analysis {
-		.competitive-analysis {
-			p {
-				padding: 0;
-			}
-			h4 {
-				padding: 10px 0 0 0;
-			}
-		}
-		.design-considerations > li > p{
-			height: 140px;
-		}
-		
-	}
-	.ia {
-		
-	}
-	.visual-design {
+	.branding {
 		.colors {
-			border: 1px solid #979797;
+			border: 1px solid #C6C6C6;
 			padding-top: 0;
 			display: inline-block;
 			li {
@@ -180,22 +163,22 @@ $chatify-primary-color: #16a086;
 				padding: 64px 10px;
 				display: inline-block;
 			}
-			.c75C03A {
+			.c16A086 {
 				background-color: $chatify-primary-color;
 				color: #FFFFFF;
+			}
+			.cE1F6DE {
+				background-color: #E1F6DE;
 			}
 			.c000000 {
 				background-color: #000000;
 				color: #FFFFFF;
 			}
-			.c979797 {
-				background-color: #979797;
+			.cC6C6C6 {
+				background-color: #C6C6C6;
 			}
 			.cFFFFFF {
 				background-color: #FFFFFF;
-			}
-			.cDCDCDC {
-				background-color: #DCDCDC;
 			}
 		}
 	}

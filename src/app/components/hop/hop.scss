@@ -1,10 +1,13 @@
 $hop-primary-color: #75C03A;
 
 .page-wrapper.hop {
+	margin-top: 50px;
+	.lnr {
+			color: $hop-primary-color;
+		}
 	h3, h4 {
 		color: $hop-primary-color;
 	}
-	margin-top: 50px;
 	video {
 		max-height: 94%;
 	    max-width: 90%;
@@ -34,9 +37,7 @@ $hop-primary-color: #75C03A;
 	}
 	.gray-box {
 
-		.lnr {
-			color: $hop-primary-color;
-		}
+		
 		p {
 			border-left: 4px solid $hop-primary-color;
 		}
@@ -109,13 +110,8 @@ $hop-primary-color: #75C03A;
 		}
 	}
 	.problem {
-		background: url(#{$hopLoc}/img/hop.jpg) fixed;
-		background-size: 100%;
-		color: $white;
 		padding-bottom: 40px;
-		h3 {
-			color: $white;
-		}
+		
 		p {
 			font-weight: lighter;
 			padding-bottom: 40px;
@@ -126,9 +122,6 @@ $hop-primary-color: #75C03A;
 			font-size: 1.5em;
 			padding-top: 20px;
 			color: $hop-primary-color;
-		}
-		.lnr {
-			color: $white;
 		}
 		.lnr-lg {
 			//border: 2px solid $white;
