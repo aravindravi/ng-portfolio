@@ -19,6 +19,7 @@ $mainImg: "/app/main/assets/img";
 $hopLoc: "/app/components/hop";
 $recallLoc: "/app/components/recall";
 $crmLoc: "/app/components/crm";
+$chatifyLoc: "/app/components/chatify";
 
 
 /* MIXINS */
@@ -529,6 +530,10 @@ section > .fp-tableCell
     background-position: left;
   }
 }
+#projects #chatify
+{
+  background-image: url(#{$chatifyLoc}/img/chatify.jpg);
+}
 #projects #milan
 {
   background-image: url('../img/carousel/milan.jpg');
@@ -573,23 +578,8 @@ section > .fp-tableCell
   color: $white;
   padding-top: 40px;
   font-weight: normal;
-}
-#projects #hop .head1,
-#projects #recall .head1,
-#projects #milan .head1,
-#projects #usability .head1,
-#projects #statement .head1,
-#projects #synku .head1,
-#projects #crm .head1
-{
   font-size: 72px;
 }
-#projects #usability .head1,
-#projects #statement .head1
-{
-  font-size: 48px;
-}
-
 
 #projects #milan .phone
 {
@@ -609,13 +599,7 @@ section > .fp-tableCell
   background-size: 96% auto;
   background-position: left;
 }
-#projects #hop .head2,
-#projects #recall .head2,
-#projects #milan .head2,
-#projects #usability .head2,
-#projects #statement .head2,
-#projects #synku .head2,
-#projects #crm .head2,
+#projects .head2
 {
   font-size: 48px;
   font-family: $unisans;

@@ -37,6 +37,9 @@
       .when('/portfolio/crm', {
           templateUrl: 'app/components/crm/crm.html'
       })
+      .when('/portfolio/chatify', {
+          templateUrl: 'app/components/chatify/chatify.html'
+      })
       .otherwise({
           redirectTo: '/'
       });
