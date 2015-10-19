@@ -524,9 +524,6 @@ section > .fp-tableCell
 #projects #crm
 {
   background-image: url(#{$crmLoc}/img/statement.jpg);
-  .responsive {
-    padding-top: 60px;
-  }
 }
 #projects #recall
 {
@@ -1138,13 +1135,21 @@ footer .social > ul
 {
   background-color: #f6f6f6;
 }
-
+.snippets > li
+{
+  margin-top: 40px;
+}
   
 
 @media (max-width: 768px) {
   /*Vertical Timeline*/
   .timeline{
     padding-left: 15px;
+  }
+  .snippets.what-i-do {
+    li {
+      padding-bottom: 0px;
+    }
   }
   .timeline:before
   {
@@ -1239,19 +1244,25 @@ footer .social > ul
   {
     max-height: 200px;
   }
-  .snippets > li
-  {
-    margin-top: 40px;
-  }
+  
 
 
 }
 @media (max-width: 480px) {
+  .slide-title.home {
+    margin-top: 40px;
+  }
   .name:after
   {
     //content: 'AR';
     font-size: 28px;
   }
+  .snippets.trivia {
+  padding-top: 0px;
+  h4 {
+    display: block;
+  }
+}
   .text-big {
     font-size: 1em;
   }
@@ -1277,11 +1288,7 @@ footer .social > ul
   .adjust-height {
     height: 250px;
   }
-  .snippets.what-i-do {
-    li {
-      padding-bottom: 0px;
-    }
-  }
+  
   #projects .white-btn
   {
     display: none; 
@@ -1301,7 +1308,7 @@ footer .social > ul
   }
   #intro .description .small {
     font-size: 16px;
-    margin: 0 7%;
+    margin: 0 4%;
     text-align: left;
     line-height: 1.8em;
   }
@@ -1312,7 +1319,10 @@ footer .social > ul
 
 @media (min-width: 768px) {
   
-
+  .snippets > li
+  {
+    margin-top: 0px;
+  }
   .timeline, .timeline > li {
     position: relative;
     min-height: 100px;
@@ -1378,6 +1388,9 @@ footer .social > ul
 }
 
 @media (min-width: 992px) {
+  #projects .white-btn {
+    padding-top: 20px;
+  }
   .container 
   {
     max-width: 78%;

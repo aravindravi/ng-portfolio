@@ -13,7 +13,6 @@
 	}
 	.video-ideas {
 		background-image: url(#{$recallLoc}/img/ideas.png);
-		margin-top: 120px;
 	}
 	.more-projects {
 		img {
@@ -30,5 +29,29 @@
 	}
 	#chatify img {
 		max-height: 600px;
+	}
+}
+@media (min-width: 768px) {
+	
+	#chatify .responsive {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	
+}
+@media (min-width: 480px) {
+	.responsive {
+		padding-top: 60px;
+	}
+	.video-ideas {
+		margin-top: 120px;
+	}
+}
+@media (max-width: 480px) {
+	.responsive {
+		padding-top: 40px;
+	}
+	.video-ideas {
+		margin-top: 40px;
 	}
 }
