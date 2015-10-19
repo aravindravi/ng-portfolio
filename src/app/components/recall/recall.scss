@@ -6,7 +6,7 @@ $recall-primary-color: #FFA000;
 		color: $recall-primary-color;
 	}
 	.video-phone {
-		min-height: 540px;
+		//min-height: 540px;
 		max-height: 94%;
 	    max-width: 90%;
 	    padding: 13% 4%;
@@ -98,12 +98,6 @@ $recall-primary-color: #FFA000;
 			font-weight: bolder;
 			color: $recall-primary-color;
 		}
-		p {
-			
-			font-size: 2em;
-			font-family: $opensans;
-			
-		}
 
 	}
 	.wireframes {
@@ -167,6 +161,10 @@ $recall-primary-color: #FFA000;
 				font-size: 18px;
 	    	padding-bottom: 20px;
 			}
+		}
+		.product h2 {
+			font-size: 1em;
+			padding-top: 20px;
 		}
 	}
 }
