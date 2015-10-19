@@ -182,6 +182,11 @@ $chatify-primary-color: #16a086;
 			}
 		}
 	}
+	.outcome {
+		.lnr {
+			padding-top: 8px;
+		}
+	}
 }
 @media (max-width: 768px) {
 	.page-wrapper.chatify {

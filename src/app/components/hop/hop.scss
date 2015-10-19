@@ -97,12 +97,6 @@ $hop-primary-color: #75C03A;
 			font-weight: bolder;
 			color: $hop-primary-color;
 		}
-		p {
-			
-			font-size: 2em;
-			font-family: $opensans;
-			
-		}
 	}
 	.wireframes {
 		.wireframe {
@@ -220,6 +214,9 @@ $hop-primary-color: #75C03A;
 }
 
 @media (max-width: 480px) {
+	.mobile-left {
+		float: right;
+	}
 	.page-wrapper.hop {
 		.hero {
 			h1 {

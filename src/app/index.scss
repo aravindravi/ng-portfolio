@@ -3,7 +3,7 @@
 // endbower
 
 /* COLORS */
-$primary-color: #1EA5BB;
+$primary-color: #0D9EBF;
 //06ACC7, 15AEC7, 0DA6BF, 0D9EBF
 $secondary-color: #D9C539;
 $dark-gray: #A9A9A9;
@@ -226,6 +226,16 @@ header.state2 .menu > .active > a:focus {
       top: 0;
       background-color: rgba(0,0,0,0.4);
   }
+.inv-overlay {
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  display: none;
+}
 .adjust-height {
   height: 600px;
 }
@@ -466,6 +476,7 @@ section > .fp-tableCell
   width: 100%;
   @include transition(500ms);
   margin: auto;
+  position: relative
 }
 #projects > li:last-child
 {
@@ -475,6 +486,7 @@ section > .fp-tableCell
 {
   //height: 600px;
   margin: 0 0 4px 0;
+  position: relative;
   background-size: 100% 120%;
   -webkit-background-size: 100% 120%;
   -moz-background-size: 100% 120%;
@@ -676,6 +688,12 @@ section > .fp-tableCell
   color: #A6A6A6;
   font-size: 21px;
 }
+.snippets h4
+{
+    color: #0D9EBF;
+    font-size: 1em;
+    font-weight: normal;
+}
 .snippets p
 {
   font-size: 16px;
@@ -699,7 +717,7 @@ section > .fp-tableCell
 }
 .snippets.what-i-do {
   li {
-
+    padding-bottom: 40px;
   }
   p {
     color: $black;
@@ -730,6 +748,7 @@ section > .fp-tableCell
 {
   font-size: 1.2em;
   font-weight: lighter;
+  padding-bottom: 20px;
 }
 #stats .what-ive-done .fa
 {
@@ -740,16 +759,6 @@ section > .fp-tableCell
   height: 60px;
   width: auto;
   margin-bottom: 80px; 
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  opacity: 0.4;
-  @include transition(300ms);
-}
-#stats .clients > li > img:hover
-{
-  opacity: 1;
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
 }
 #stats .clients > .your-company
 {
@@ -1243,6 +1252,9 @@ footer .social > ul
     //content: 'AR';
     font-size: 28px;
   }
+  .text-big {
+    font-size: 1em;
+  }
   .menu > li > a
   {
     //font-size: 16px;
@@ -1265,9 +1277,17 @@ footer .social > ul
   .adjust-height {
     height: 250px;
   }
+  .snippets.what-i-do {
+    li {
+      padding-bottom: 0px;
+    }
+  }
   #projects .white-btn
   {
-    display: none;
+    display: none; 
+  }
+  .inv-overlay {
+    display: block;
   }
   #projects .head1
   {
@@ -1284,6 +1304,9 @@ footer .social > ul
     margin: 0 7%;
     text-align: left;
     line-height: 1.8em;
+  }
+  .page-wrapper section h3 {
+    font-size: 1.5em;
   }
 }
 
@@ -1338,6 +1361,7 @@ footer .social > ul
   {
     color: $primary-color;
     font-size: 1em;
+    font-weight: normal;
   }
   .snippets p
   {
