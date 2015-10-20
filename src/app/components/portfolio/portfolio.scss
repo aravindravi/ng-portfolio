@@ -3,14 +3,12 @@
 		max-height: 94%;
 	    max-width: 90%;
 	    padding: 12% 4.1%;
-	    background-image: url(#{$hopLoc}/img/hop-phone.png);
+	    background-image: url(#{$hopLoc}/img/hop-phone1.png);
 	    background-size: 100%;
 	    background-repeat: no-repeat;
 	    padding-bottom: 64px;
 	}
-	.hop-phone {
-		margin-top: 60px;
-	}
+	
 	.video-ideas {
 		background-image: url(#{$recallLoc}/img/ideas.png);
 	}
@@ -40,11 +38,13 @@
 	
 }
 @media (min-width: 480px) {
-	.responsive {
-		padding-top: 60px;
-	}
-	.video-ideas {
-		margin-top: 120px;
+	.page-wrapper.portfolio {
+		.responsive {
+			padding-top: 60px;
+		}
+		.video-ideas {
+			margin-top: 120px;
+		}
 	}
 }
 @media (max-width: 480px) {

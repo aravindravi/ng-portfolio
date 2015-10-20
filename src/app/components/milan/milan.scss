@@ -1,36 +1,9 @@
-$recall-primary-color: #FFA000;
+$milan-primary-color: #0D9EBF;
 
-.page-wrapper.recall {
+.page-wrapper.milan {
 	margin-top: 50px;
 	h3, h4 {
-		color: $recall-primary-color;
-	}
-	.video-phone {
-		//min-height: 540px;
-		max-height: 94%;
-	    max-width: 90%;
-	    padding: 13% 4%;
-	    background-size: 100%;
-	    background-repeat: no-repeat;
-	    padding-bottom: 64px;
-	}
-	.video-watch {
-		background-image: url(#{$recallLoc}/img/ideas.png);
-	}
-	.video-home {
-		background-image: url(#{$recallLoc}/img/home.png);
-	}
-	.video-filter {
-		background-image: url(#{$recallLoc}/img/filter.png);
-	}
-	.video-actionable {
-		background-image: url(#{$recallLoc}/img/actionable.png);
-	}
-	.video-ideas {
-		background-image: url(#{$recallLoc}/img/ideas.png);
-	}
-	.video-transcribe {
-		background-image: url(#{$recallLoc}/img/ideas.png);
+		color: $milan-primary-color;
 	}
 	.video-perspective {
 		background-color: #FFFFFF;
@@ -41,18 +14,18 @@ $recall-primary-color: #FFA000;
 		min-height: 200px;
 	}
 	.toc-list .lnr {
-		color: $recall-primary-color;
+		color: $milan-primary-color;
 	}
 	.gray-box {
 		.lnr {
-			color: $recall-primary-color;
+			color: $milan-primary-color;
 		}
 		p {
-			border-left: 4px solid $recall-primary-color;
+			border-left: 4px solid $milan-primary-color;
 		}
 	}
 	.toc .lnr {
-      color: $recall-primary-color;
+      color: $milan-primary-color;
     }
 	.hero {
 		background: url(#{$recallLoc}/img/recall.jpg) #000 fixed;
@@ -75,7 +48,7 @@ $recall-primary-color: #FFA000;
 				}
 			}
 		  .phone {
-			    background: url(#{$recallLoc}/img/recall-phone.png) no-repeat 100% 50%;
+			    background: url(#{$milanLoc}/img/milan-phone.png) no-repeat 100% 50%;
 			    background-size: 96% auto;
 			    background-position: left;
 			}
@@ -96,7 +69,7 @@ $recall-primary-color: #FFA000;
 			font-size: 2em;
 			font-family: $opensans;
 			font-weight: bolder;
-			color: $recall-primary-color;
+			color: $milan-primary-color;
 		}
 
 	}
@@ -116,7 +89,7 @@ $recall-primary-color: #FFA000;
 			font-family: $unisans;
 			font-size: 1.5em;
 			padding-top: 20px;
-			color: $recall-primary-color;
+			color: $milan-primary-color;
 		}
 		.team {
 			font-weight: lighter;
@@ -134,7 +107,7 @@ $recall-primary-color: #FFA000;
 	
 }
 @media (max-width: 768px) {
-	.page-wrapper.recall {
+	.page-wrapper.milan {
 		.hero {
 			h1 {
 				font-size: 56px;
@@ -150,7 +123,7 @@ $recall-primary-color: #FFA000;
 }
 
 @media (max-width: 480px) {
-	.page-wrapper.recall {
+	.page-wrapper.milan {
 		.hero {
 			h1 {
 				font-size: 36px;

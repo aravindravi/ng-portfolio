@@ -3,10 +3,10 @@
 
   angular
     .module('arApp')
-    .controller('PortfolioController', PortfolioController);
+    .controller('RecallController', RecallController);
 
   /** @ngInject */
-  function PortfolioController($window, $rootScope, $scope) {
+  function RecallController($window, $rootScope, $scope) {
   	angular.element($window).unbind("scroll");
 	  $rootScope.changeHeaderState(3);
 	  $scope.$watch('$viewContentLoaded', function()

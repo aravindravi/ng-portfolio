@@ -20,6 +20,7 @@ $hopLoc: "/app/components/hop";
 $recallLoc: "/app/components/recall";
 $crmLoc: "/app/components/crm";
 $chatifyLoc: "/app/components/chatify";
+$milanLoc: "/app/components/milan";
 
 
 /* MIXINS */
@@ -247,7 +248,7 @@ header.state2 .menu > .active > a:focus {
   float: left;
   @include transition(300ms);
   border: 1px solid $primary-color;
-  padding: 3px 7px 0px 6px;
+  padding: 3px 12px 0px 6px;
   background-size: contain;
   background-repeat: no-repeat;
   width: 40px;
@@ -539,6 +540,29 @@ section > .fp-tableCell
     background-position: left;
   }
 }
+#projects #fun-stuff
+{
+  color: $white;
+  background-image: url(#{$chatifyLoc}/img/chatify.jpg);
+  img {
+    
+    padding: 12px;
+    height: 180px;
+  }
+  .img-holder {
+    background-color: $white;
+    p {
+      color: $black;
+      padding-bottom: 12px;
+      font-family: $unisans;
+    }
+  }
+  .title {
+    font-weight: bold;
+    font-size: 2em;
+    padding: 24px 0 10px 0;
+  }
+}
 #projects #chatify
 {
   background-image: url(#{$chatifyLoc}/img/chatify.jpg);
@@ -708,6 +732,9 @@ section > .fp-tableCell
 }
 .snippets.trivia {
   padding-top: 30px;
+  lnr {
+    padding-right: 12px;
+  }
   h4 {
     display: inline-block;
   }
@@ -1389,7 +1416,7 @@ footer .social > ul
 
 @media (min-width: 992px) {
   #projects .white-btn {
-    padding-top: 20px;
+    //padding-top: 20px;
   }
   .container 
   {

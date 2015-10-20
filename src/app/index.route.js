@@ -29,9 +29,11 @@
           controllerAs: 'about'
       })
       .when('/portfolio/hop', {
+          controller: 'HopController',
           templateUrl: 'app/components/hop/hop.html'
       })
       .when('/portfolio/recall', {
+          controller: 'RecallController',
           templateUrl: 'app/components/recall/recall.html'
       })
       .when('/portfolio/crm', {
@@ -39,6 +41,12 @@
       })
       .when('/portfolio/chatify', {
           templateUrl: 'app/components/chatify/chatify.html'
+      })
+      .when('/portfolio/milan', {
+          templateUrl: 'app/components/milan/milan.html'
+      })
+      .when('/portfolio/graphics', {
+          templateUrl: 'app/components/graphics/graphics.html'
       })
       .otherwise({
           redirectTo: '/'
