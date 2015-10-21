@@ -5,28 +5,7 @@ $milan-primary-color: #0D9EBF;
 	h3, h4 {
 		color: $milan-primary-color;
 	}
-	.video-perspective {
-		background-color: #FFFFFF;
-		background-size: 100%; 
-		background-image: url(#{$recallLoc}/img/perspective.jpg);
-		background-repeat: no-repeat;
-		max-width: 100%;
-		min-height: 200px;
-	}
-	.toc-list .lnr {
-		color: $milan-primary-color;
-	}
-	.gray-box {
-		.lnr {
-			color: $milan-primary-color;
-		}
-		p {
-			border-left: 4px solid $milan-primary-color;
-		}
-	}
-	.toc .lnr {
-      color: $milan-primary-color;
-    }
+	
 	.hero {
 		background: url(#{$chatifyLoc}/img/chatify.jpg) #000 fixed;
 		background-size: 100% 120%;
@@ -47,11 +26,6 @@ $milan-primary-color: #0D9EBF;
 					padding-top: 4px;
 				}
 			}
-		  .phone {
-			    background: url(#{$milanLoc}/img/milan-phone.png) no-repeat 100% 50%;
-			    background-size: 96% auto;
-			    background-position: left;
-			}
 		  h1 {
 			  font-size: 72px;
 			  font-family: $opensans;
@@ -62,47 +36,6 @@ $milan-primary-color: #0D9EBF;
 			  font-family: $unisans;
 			  line-height: 1.5em;
 			}
-	}
-	.product {
-		h2 {
-			padding-top: 100px;
-			font-size: 2em;
-			font-family: $opensans;
-			font-weight: bolder;
-			color: $milan-primary-color;
-		}
-
-	}
-	.wireframes {
-		.wireframe {
-			padding-bottom: 60px;
-		}
-	}
-	.problem {
-		
-		padding-bottom: 40px;
-		p {
-			font-weight: lighter;
-			padding-bottom: 40px;
-		}
-		h4 {
-			font-family: $unisans;
-			font-size: 1.5em;
-			padding-top: 20px;
-			color: $milan-primary-color;
-		}
-		.team {
-			font-weight: lighter;
-		}
-		.lnr-lg {
-			//border: 2px solid $white;
-			border-radius: 100px;
-			padding: 20px;
-		}
-		.lnr-holder {
-			//padding: 40px;
-		}
-		
 	}
 	
 }
