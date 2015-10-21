@@ -1,0 +1,76 @@
+.page-wrapper.redesign {
+	margin-top: 50px;
+	h3, h4 {
+		color: $primary-color;
+	}
+	.hero {
+		background: url(#{$chatifyLoc}/img/chatify.jpg) #000 fixed;
+		background-size: 100% 120%;
+		background-position-y: 100%;
+		color: $white;
+		.roles {
+				li {
+					text-align: center;
+				}
+				.lnr {
+					font-size: 1.5em;
+					color: $white;
+					font-size: 1.2em;
+					padding-bottom: 0;
+				}
+				p {
+					line-height: 1.4;
+					padding-top: 4px;
+				}
+			}
+		  .phone {
+			    background: url(#{$milanLoc}/img/milan-phone.png) no-repeat 100% 50%;
+			    background-size: 96% auto;
+			    background-position: left;
+			}
+		  h1 {
+			  font-size: 72px;
+			  font-family: $opensans;
+			  margin-top: 80px;
+			}
+			h2 {
+			  font-size: 48px;
+			  font-family: $unisans;
+			  line-height: 1.5em;
+			}
+	}
+}
+@media (max-width: 768px) {
+	.page-wrapper.redesign {
+		.hero {
+			h1 {
+				font-size: 56px;
+    			padding-top: 40px;	
+			}
+			h2 {
+				font-size: 36px;
+	   			padding-bottom: 20px;
+	   			margin-top: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.page-wrapper.redesign {
+		.hero {
+			h1 {
+				font-size: 36px;
+	    	margin-top: 30px;
+			}
+			h2 {
+				font-size: 18px;
+	    	padding-bottom: 20px;
+			}
+		}
+		.product h2 {
+			font-size: 1em;
+			padding-top: 20px;
+		}
+	}
+}
