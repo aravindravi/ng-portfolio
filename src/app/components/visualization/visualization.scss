@@ -1,4 +1,4 @@
-.page-wrapper.redesign {
+.page-wrapper.visualization {
 	margin-top: 50px;
 	h3, h4 {
 		color: $primary-color;
@@ -22,6 +22,11 @@
 					line-height: 1.4;
 					padding-top: 4px;
 				}
+			}
+		  .phone {
+			    background: url(#{$milanLoc}/img/milan-phone.png) no-repeat 100% 50%;
+			    background-size: 96% auto;
+			    background-position: left;
 			}
 		  h1 {
 			  font-size: 72px;

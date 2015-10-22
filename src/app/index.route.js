@@ -51,6 +51,9 @@
       .when('/portfolio/redesign', {
           templateUrl: 'app/components/redesign/redesign.html'
       })
+      .when('/portfolio/visualization', {
+          templateUrl: 'app/components/visualization/visualization.html'
+      })
       .otherwise({
           redirectTo: '/'
       });
