@@ -5,14 +5,6 @@ $milan-primary-color: #0D9EBF;
 	h3, h4 {
 		color: $milan-primary-color;
 	}
-	.video-perspective {
-		background-color: #FFFFFF;
-		background-size: 100%; 
-		background-image: url(#{$recallLoc}/img/perspective.jpg);
-		background-repeat: no-repeat;
-		max-width: 100%;
-		min-height: 200px;
-	}
 	.toc-list .lnr {
 		color: $milan-primary-color;
 	}
@@ -28,7 +20,7 @@ $milan-primary-color: #0D9EBF;
       color: $milan-primary-color;
     }
 	.hero {
-		background: url(#{$recallLoc}/img/recall.jpg) #000 fixed;
+		background: url(#{$milanLoc}/img/process/milan.jpg) #000 fixed;
 		background-size: 100% 120%;
 		background-position-y: 100%;
 		color: $white;

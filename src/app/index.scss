@@ -572,19 +572,7 @@ section > .fp-tableCell
 }
 #projects #milan
 {
-  background-image: url('../img/carousel/milan.jpg');
-}
-#projects #statement
-{
-  background-image: url('../img/carousel/statement.jpg');
-}
-#projects #usability
-{
-  background-image: url('../img/carousel/usability.jpg');
-}
-#projects #synku
-{
-  background-image: url('../img/carousel/synku.jpg');
+  background-image: url(#{$milanLoc}/img/process/milan.jpg);
 }
 #projects #project1 .head1
 {
