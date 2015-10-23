@@ -1,6 +1,48 @@
-
+.page-wrapper.main {
+	h1 {
+		font-size: 64px;
+		color: $primary-color;
+	}
+	h2 {
+		color: $white;
+	}
+	.title {
+		margin-top: 120px;
+	}
+	.video-holder {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow: hidden;
+	}
+	.view-portfolio {
+		margin-top: 120px;
+	}
 	.lnr {
 		color: $primary-color;
 		padding-bottom: 12px;
 	}
-
+	.social  {
+		padding-top: 20px;
+	    height: 60px;
+	    list-style: none;
+	    z-index: 2;
+	    position: relative;
+	    color: #ffffff;
+	    -webkit-padding-start: 0px;
+	    margin-bottom: 12px;
+	    font-size: 0.8em;
+	}
+	.social > ul > li {
+	    display: inline-block;
+	    padding: 0 12px;
+	}
+	.social a {
+		color: $dark-gray;
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}

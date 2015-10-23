@@ -4,7 +4,7 @@
 
 /* COLORS */
 $primary-color: #0D9EBF;
-//06ACC7, 15AEC7, 0DA6BF, 0D9EBF
+//06ACC7, 15AEC7, 0DA6BF, 0D9EBF, 22C0E8
 $secondary-color: #D9C539;
 $dark-gray: #A9A9A9;
 $light-gray: #F6F6F6;
@@ -118,7 +118,6 @@ header.state2
 {
   /* background-color: rgba(255,255,255,1);
   box-shadow: 0 0 1em #999; */
-  color: $primary-color;  
   box-shadow: none;
   @include transition(300ms);
 
@@ -228,7 +227,7 @@ header.state2 .menu > .active > a:focus {
       right: 0;
       bottom: 0;
       top: 0;
-      background-color: rgba(0,0,0,0.4);
+      background-color: rgba(0,0,0,0.8);
   }
 .inv-overlay {
   background-color: rgba(0,0,0,0);
@@ -797,47 +796,7 @@ section > .fp-tableCell
   padding-bottom: 20px;
 }
 
-.social .links .fa
-{
-  color: #A6A6A6;
-  @include transition(300ms);
-}
-.social .links .fa:hover
-{
-  color: $primary-color;
-}
-.social > ul
-{
-  list-style: none;
-  display: inline-block;
-  z-index: 4;
-  position: relative;
-  color: $white;
-  -webkit-padding-start: 0px;
-}
-.social > ul > li
-{
-  display: inline-block;
-  padding: 0 2px;
-  font-size: 14px;
-}
-.social > ul > li > a
-{
-  width: 30px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  color: #a6a6a6;
-  display: inline-block;
-  text-align: center;
-  /* line-height: 40px; */
-  color: #A6A6A6;
-  @include transition(300ms);
-}
-.social > ul > li > a:hover
-{
-  //background: $primary-color;
-  color: $primary-color;
-}
+
 footer
 {
   padding: 6px;
