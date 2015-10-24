@@ -1,3 +1,4 @@
+
 (function() {
   'use strict';
 
@@ -12,13 +13,13 @@
         angular.element($window).bind("scroll", $rootScope.scrollCheck);
         $rootScope.changeHeaderState(1);
         var count=1;
-        var numImages=3;
+        var numImages=4;
         $timeout(function() {
           $('.inside').addClass('zoom');
         },100);
         
         $interval(function() {
-          $('.inside').removeClass('zoom').removeClass('switcher1').removeClass('switcher2').removeClass('switcher3');
+          $('.inside').removeClass('zoom').removeClass('switcher1').removeClass('switcher2').removeClass('switcher3').removeClass('switcher4');
           if(count===numImages) {
             count=1;
           }

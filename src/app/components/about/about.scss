@@ -5,6 +5,9 @@
 	img {
 		padding-bottom: 0;
 	}
+	.lnr {
+		color: $primary-color;
+	}
 	.background {
 		position: fixed;
 		top: 0;
@@ -20,10 +23,10 @@
 		display: inline-block;
 		background-repeat: no-repeat;
 	}
-	ul li:nth-child(even) div{
+	ul li:nth-child(even) .path{
 		background-image: url(#{$aboutLoc}/img/path2.png);
 	}
-	ul li:nth-child(odd) div{
+	ul li:nth-child(odd) .path{
 		background-image: url(#{$aboutLoc}/img/path1.png);
 	}
 
