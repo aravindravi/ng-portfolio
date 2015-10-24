@@ -4,6 +4,7 @@ $crm-primary-color: #1EA5BB;
 	h3, h4 {
 		color: $crm-primary-color;
 	}
+	margin-top: 50px;
 	.btn
 	{
 	  border-radius: 0;
@@ -21,11 +22,12 @@ $crm-primary-color: #1EA5BB;
 	    color: $white;
 	  }
 	}
-	.gray-box {
-
-		.lnr {
+	.lnr {
 			color: $crm-primary-color;
 		}
+	.gray-box {
+
+		
 		p {
 			border-left: 4px solid $crm-primary-color;
 		}

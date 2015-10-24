@@ -1,29 +1,68 @@
 .page-wrapper.main {
 	h1 {
 		font-size: 64px;
-		color: $primary-color;
+		color: $dark-gray;
+		.highlight {
+			color: $white;
+		}
 	}
 	h2 {
 		color: $white;
 	}
+
 	.title {
+		margin-top: 140px;
+	}
+	.intro-snippets {
 		margin-top: 120px;
+		.lnr {
+			color: $white;
+			padding-bottom: 10px;
+			font-size: 1.5em;
+		}
 	}
 	.video-holder {
+		//position: absolute;
+		//background-image: url(#{$mainImg}/test7	.jpg);
+		background-position: 50%;
 		position: absolute;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
 		overflow: hidden;
+		background-color: $black;
+		video {
+			min-width: 100%;
+    		min-height: 100%;
+		}
+	}
+	.cover-img {
+		min-width: 100%;
+		min-height: 100%;
+		
+	}
+	.cover-img.zoom {
+		-ms-transform: scale(1.1); /* IE 9 */
+	    -webkit-transform: scale(1.1) translate3d(0, 0, 0); /* Safari */
+	    transform: scale(1.1) translate3d(0, 0, 0);
+		-webkit-filter: blur(20px);
+		transition: 4s all linear;
 	}
 	.view-portfolio {
-		margin-top: 120px;
+		margin-top: 60px;
 	}
-	.lnr {
-		color: $primary-color;
-		padding-bottom: 12px;
+	.description {
+		color: $dark-gray;
+		padding-top: 20px;
+		font-size: 1em;
+		
 	}
+	.highlight {
+			color: $white;
+		}
 	.social  {
 		padding-top: 20px;
 	    height: 60px;
@@ -37,7 +76,7 @@
 	}
 	.social > ul > li {
 	    display: inline-block;
-	    padding: 0 12px;
+	    padding: 0 10px;
 	}
 	.social a {
 		color: $dark-gray;
@@ -45,4 +84,16 @@
 			color: $primary-color;
 		}
 	}
+
+}
+@media (max-width: 480px) {
+	.page-wrapper.main {
+		h1 {
+			font-size: 2em;		
+		}
+		.title {
+		margin-top: 80px;
+	}
+	}
+
 }
