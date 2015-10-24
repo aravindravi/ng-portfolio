@@ -21,6 +21,7 @@ $recallLoc: "/app/components/recall";
 $crmLoc: "/app/components/crm";
 $chatifyLoc: "/app/components/chatify";
 $milanLoc: "/app/components/milan";
+$aboutLoc: "/app/components/about";
 
 
 /* MIXINS */
@@ -187,7 +188,7 @@ header.state2 .menu > .active > a:focus {
 
 .white-btn
 {
-  border: 2px solid $white;
+  border: 1px solid $white;
   color: #fff;
   margin-bottom: 40px;
   padding: 26px 60px;

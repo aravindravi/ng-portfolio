@@ -13,7 +13,6 @@
         $rootScope.changeHeaderState(1);
         var count=1;
         var numImages=3;
-        var imgPath = 'app/main/assets/img/switcher';
         $timeout(function() {
           $('.inside').addClass('zoom');
         },100);
@@ -30,7 +29,7 @@
           $timeout(function() {
             
             $('.inside').addClass('zoom');
-          }, 500);
+          }, 1000);
 
         },5000);
     });

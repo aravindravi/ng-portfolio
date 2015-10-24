@@ -1,0 +1,30 @@
+.page-wrapper.about {
+	.video {
+		height: 400px;
+	}
+	img {
+		padding-bottom: 0;
+	}
+	.background {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 300px;
+		z-index: -1;
+		background-color: #ffcc00;
+	}
+	ul li div{
+		min-height: 235px;
+		min-width: 210px;
+		display: inline-block;
+		background-repeat: no-repeat;
+	}
+	ul li:nth-child(even) div{
+		background-image: url(#{$aboutLoc}/img/path2.png);
+	}
+	ul li:nth-child(odd) div{
+		background-image: url(#{$aboutLoc}/img/path1.png);
+	}
+
+}
