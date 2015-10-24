@@ -15,22 +15,22 @@
         var numImages=3;
         var imgPath = 'app/main/assets/img/switcher';
         $timeout(function() {
-          $('.cover-img').addClass('zoom');
+          $('.inside').addClass('zoom');
         },100);
         
         $interval(function() {
-          $('.cover-img').removeClass('zoom');
+          $('.inside').removeClass('zoom').removeClass('switcher1').removeClass('switcher2').removeClass('switcher3');
           if(count===numImages) {
             count=1;
           }
           else {
             count++;
           }
-          $('.cover-img').attr('src',imgPath+count.toString()+'.jpg');
+          $('.inside').addClass('switcher'+count.toString());
           $timeout(function() {
             
-            $('.cover-img').addClass('zoom');
-          }, 1000);
+            $('.inside').addClass('zoom');
+          }, 500);
 
         },5000);
     });
