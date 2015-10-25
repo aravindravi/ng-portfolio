@@ -11,7 +11,9 @@
 
 	.hero {
 		padding-top: 80px;
-
+		p {
+			padding-bottom: 30px;
+		}
 		.sub-title {
 			font-size: 1.2em;
 		}
@@ -27,7 +29,7 @@
 			}
 		}
 		.lnr {
-			padding-right: 4px;
+			padding-right: 10px;
 		}
 		.video-holder {
 			z-index: -1;
