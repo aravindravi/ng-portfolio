@@ -23,61 +23,7 @@
 			font-size: 1.5em;
 		}
 	}
-	.video-holder {
-		//position: absolute;
-		//background-image: url(#{$mainImg}/test7	.jpg);
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		overflow: hidden;
-		background-color: $black;
-		video {
-			min-width: 100%;
-    		min-height: 100%;
-		}
-	}
-	.inside {
-		background-position: 50% 0;
-		position: relative;
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		overflow: hidden;
-	}
-	.inside.switcher1 {
-		background-image: url(#{$mainImg}/switcher1.jpg);
-		background-position: 50% 0;
-	}
-	.inside.switcher2 {
-		background-image: url(#{$mainImg}/switcher2.jpg);
-		background-position: 50% 0;
-	}
-	.inside.switcher3 {
-		background-image: url(#{$mainImg}/switcher3.jpg);
-		background-position: 50% 0;
-	}
-	.inside.switcher4 {
-		background-image: url(#{$mainImg}/switcher4.jpg);
-		background-position: 50% 0;
-	}
-	.cover-img {
-		min-width: 100%;
-		min-height: 100%;
-		
-	}
-	.inside.zoom {
-		-ms-transform: scale(1.1); /* IE 9 */
-	    -webkit-transform: scale(1.1) translate3d(0, 0, 0); /* Safari */
-	    transform: scale(1.1) translate3d(0, 0, 0);
-		-webkit-filter: blur(20px);
-		transition: 5s all linear;
-	}
+	
 	.view-portfolio {
 		margin-top: 60px;
 	}

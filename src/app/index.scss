@@ -188,7 +188,7 @@ header.state2 .menu > .active > a:focus {
 
 .white-btn
 {
-  border: 1px solid $white;
+  border: 2px solid $white;
   color: #fff;
   margin-bottom: 40px;
   padding: 26px 60px;
@@ -266,7 +266,56 @@ header.state2 .menu > .active > a:focus {
   margin-top: 6px;
   float: right;
 }
-
+.video-holder {
+    //position: absolute;
+    //background-image: url(#{$mainImg}/test7 .jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-color: $black;
+    video {
+      min-width: 100%;
+        min-height: 100%;
+    }
+  }
+  .inside {
+    background-position: 50% 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  .inside.zoom {
+    -ms-transform: scale(1.1); /* IE 9 */
+      -webkit-transform: scale(1.1) translate3d(0, 0, 0); /* Safari */
+      transform: scale(1.1) translate3d(0, 0, 0);
+    -webkit-filter: blur(20px);
+    transition: 5s all linear;
+  }
+  .inside.switcher1 {
+    background-image: url(#{$mainImg}/switcher1.jpg);
+    background-position: 50% 0;
+  }
+  .inside.switcher2 {
+    background-image: url(#{$mainImg}/switcher2.jpg);
+    background-position: 50% 0;
+  }
+  .inside.switcher3 {
+    background-image: url(#{$mainImg}/switcher3.jpg);
+    background-position: 50% 0;
+  }
+  .inside.switcher4 {
+    background-image: url(#{$mainImg}/switcher4.jpg);
+    background-position: 50% 0;
+  }
 .menu > li {
   display: inline-block;
 
@@ -314,7 +363,7 @@ section > .fp-tableCell
     //margin-top: 40px;
   }
   h3 {
-     display: inline-block;
+     //display: inline-block;
       font-family: $opensans;
       font-weight: 600;
       padding-left: 10px; 
@@ -462,10 +511,6 @@ section > .fp-tableCell
 {
   background: $white ;
 }
-#about
-{
-  background: #f6f6f6;
-}
 #bio .quote
 {
   font-family: $unisans;
@@ -517,7 +562,7 @@ section > .fp-tableCell
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-color: #e8ecef;
+  background-color: #000;
   position: relative;
   height: auto;
   margin: 0;
@@ -776,12 +821,7 @@ section > .fp-tableCell
   padding-bottom: 10px;
   font-size: 24px;
 }
-#about .intro
-{
-  font-size: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+
 
 .social .links .fa
 {
@@ -858,26 +898,8 @@ footer .social > ul
 /*
 * EXPERIENCE 
 */
-#experience h3, #about h3
-{
-  color: $primary-color;
-  margin-bottom: 20px;
-}
-#experience .ex-h3, #about .ex-h3
-{
-  text-align: center;
-}
-#about
-{
-  text-align: center;
-}
-#about .why-ux p
-{
-  text-align: justify;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  font-size: 16px;
-}
+
+
 .skills
 {
   list-style: none;
