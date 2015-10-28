@@ -76,6 +76,19 @@
 		.title {
 		margin-top: 80px;
 	}
-	}
+}
+@media (min-width: 1366px) {
+  .page-wrapper.main {
+    .title {
+      margin-top: 200px;
+    }
+    .description {
+      margin-top: 40px;
+    }
+    .view-portfolio {
+      margin-top: 160px !important;
+    }
+  }
+}	
 
 }

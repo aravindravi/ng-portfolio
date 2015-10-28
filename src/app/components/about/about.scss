@@ -45,6 +45,21 @@
 			padding: 0;
 		}
 	}
+	.what-ive-done .main {
+		font-weight: lighter;
+	}
+	.clients > li > img
+	{
+	  height: 60px;
+	  width: auto;
+	  margin-bottom: 80px; 
+	}
+	.clients > .your-company
+	{
+	  padding: 24px 0;
+	  border: 1px dashed $dark-gray;
+	  color: $dark-gray;
+	}
 	img {
 		padding-bottom: 0;
 	}

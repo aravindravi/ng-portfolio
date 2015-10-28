@@ -11,6 +11,7 @@
   	$scope.$on('$viewContentLoaded', function(){
       	//$(document).scroll(scrollCheck);
         $('.video-holder').css('height', $window.innerHeight+'px');
+        $('#intro').css('height', $window.innerHeight+'px');
         $window.ga('send', 'pageview', { page: $location.url() });
         angular.element($window).bind("scroll", $rootScope.scrollCheck);
         $rootScope.changeHeaderState(1);
