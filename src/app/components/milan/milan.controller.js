@@ -3,10 +3,10 @@
 
   angular
     .module('arApp')
-    .controller('AboutController', AboutController);
+    .controller('MilanController', MilanController);
 
   /** @ngInject */
-  function AboutController($scope, $location) {
+  function MilanController($scope, $location) {
   	$scope.$on('$viewContentLoaded', function(){
   		$window.ga('send', 'pageview', { page: $location.url() });
   	});

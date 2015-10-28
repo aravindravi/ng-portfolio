@@ -3,10 +3,10 @@
 
   angular
     .module('arApp')
-    .controller('AboutController', AboutController);
+    .controller('CrmController', CrmController);
 
   /** @ngInject */
-  function AboutController($scope, $location) {
+  function CrmController($scope, $location) {
   	$scope.$on('$viewContentLoaded', function(){
   		$window.ga('send', 'pageview', { page: $location.url() });
   	});

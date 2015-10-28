@@ -3,10 +3,10 @@
 
   angular
     .module('arApp')
-    .controller('AboutController', AboutController);
+    .controller('GraphicsController', GraphicsController);
 
   /** @ngInject */
-  function AboutController($scope, $location) {
+  function GraphicsController($scope, $location) {
   	$scope.$on('$viewContentLoaded', function(){
   		$window.ga('send', 'pageview', { page: $location.url() });
   	});

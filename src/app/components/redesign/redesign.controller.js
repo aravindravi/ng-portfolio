@@ -3,10 +3,10 @@
 
   angular
     .module('arApp')
-    .controller('AboutController', AboutController);
+    .controller('RedesignController', RedesignController);
 
   /** @ngInject */
-  function AboutController($scope, $location) {
+  function RedesignController($scope, $location) {
   	$scope.$on('$viewContentLoaded', function(){
   		$window.ga('send', 'pageview', { page: $location.url() });
   	});

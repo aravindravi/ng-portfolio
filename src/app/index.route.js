@@ -24,9 +24,9 @@
           controllerAs: 'portfolio'
       })
       .when('/about', {
-          templateUrl: 'app/components/about/about.html',
           controller: 'AboutController',
-          controllerAs: 'about'
+          controllerAs: 'about',
+          templateUrl: 'app/components/about/about.html'
       })
       .when('/portfolio/hop', {
           controller: 'HopController',
@@ -37,21 +37,27 @@
           templateUrl: 'app/components/recall/recall.html'
       })
       .when('/portfolio/crm', {
+        controller: 'CrmController',
           templateUrl: 'app/components/crm/crm.html'
       })
       .when('/portfolio/chatify', {
+          controller: 'ChatifyController',
           templateUrl: 'app/components/chatify/chatify.html'
       })
       .when('/portfolio/milan', {
+          controller: 'MilanController',
           templateUrl: 'app/components/milan/milan.html'
       })
       .when('/portfolio/graphics', {
+          controller: 'GraphicsController',
           templateUrl: 'app/components/graphics/graphics.html'
       })
       .when('/portfolio/redesign', {
+          controller: 'RedesignController',
           templateUrl: 'app/components/redesign/redesign.html'
       })
       .when('/portfolio/visualization', {
+          controller: 'VisualizationController',
           templateUrl: 'app/components/visualization/visualization.html'
       })
       .otherwise({

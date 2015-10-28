@@ -7,9 +7,11 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($scope, $window, $rootScope, $interval, $timeout) {
+  function MainController($scope, $window, $rootScope, $interval, $timeout, $location) {
   	$scope.$on('$viewContentLoaded', function(){
       	//$(document).scroll(scrollCheck);
+        $('.video-holder').css('height', $window.innerHeight+'px');
+        $window.ga('send', 'pageview', { page: $location.url() });
         angular.element($window).bind("scroll", $rootScope.scrollCheck);
         $rootScope.changeHeaderState(1);
         var count=1;

@@ -20,7 +20,6 @@
 		.pic-container {
 			float: right;
 		}
-		
 
 		.snippets {
 			font-weight: lighter;
@@ -29,7 +28,10 @@
 			}
 		}
 		.lnr {
-			padding-right: 10px;
+			color: $dark-gray;
+			&:hover {
+				color: $primary-color;
+			}
 		}
 		.video-holder {
 			z-index: -1;
@@ -41,28 +43,6 @@
 		}
 		h4 {
 			padding: 0;
-		}
-	}
-	.what-i-do-bkup {
-		color: $white;
-		background-image: url(#{$chatifyLoc}/img/chatify.jpg);
-		background-size: cover;
-		  background-position: 50% 50%;
-		  background-repeat: no-repeat;
-		  background-color: #000;
-		  .snippets {
-			color: $white;
-			font-weight: lighter;
-			.lnr {
-				color: $white;
-				font-size: 1.5em;
-			}
-			p {
-				color: $dark-gray;
-			}
-			h4 {
-				color: $white;
-			}
 		}
 	}
 	img {
