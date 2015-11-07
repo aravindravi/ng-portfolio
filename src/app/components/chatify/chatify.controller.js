@@ -3,10 +3,10 @@
 
   angular
     .module('arApp')
-    .controller('GraphicsController', GraphicsController);
+    .controller('ChatifyController', ChatifyController);
 
   /** @ngInject */
-  function GraphicsController($window, $scope, $location) {
+  function ChatifyController($window, $scope, $location) {
   	$scope.$on('$viewContentLoaded', function(){
   		$window.ga('send', 'pageview', { page: $location.url() });
   	});

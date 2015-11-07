@@ -6,7 +6,7 @@
     .controller('MilanController', MilanController);
 
   /** @ngInject */
-  function MilanController($scope, $location) {
+  function MilanController($window, $scope, $location) {
   	$scope.$on('$viewContentLoaded', function(){
   		$window.ga('send', 'pageview', { page: $location.url() });
   	});

@@ -158,6 +158,9 @@ header.state2 .menu > .active > a:focus {
 .pad-bottom-40 {
   padding-bottom: 40px;
 }
+.pad-bottom-20 {
+  padding-bottom: 20px;
+}
 .pad-top-40 {
   padding-top: 40px;
 }
@@ -359,6 +362,9 @@ section > .fp-tableCell
 }
 .page-wrapper {
   font-size: 1.5em;
+  p {
+    font-size: 1em;
+  }
   section {
     //margin-top: 40px;
   }
@@ -433,6 +439,9 @@ section > .fp-tableCell
   }
 }
 
+.lnr.lnr-md {
+  font-size: 1.5em;
+}
 
 .lnr.lnr-lg {
   font-size: 2em;
