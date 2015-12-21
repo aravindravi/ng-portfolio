@@ -9,7 +9,6 @@
 	    background-repeat: no-repeat;
 	    padding-bottom: 64px;
 	}
-	
 	.video-ideas {
 		background-image: url(#{$recallLoc}/img/ideas.png);
 	}
@@ -28,6 +27,11 @@
 	}
 	#chatify img {
 		max-height: 600px;
+	}
+	#fun-stuff {
+		img {
+			max-height: 260px;
+		}
 	}
 	.nda-projects {
 		background-image: url(#{$mainImg}/texture.jpg);
