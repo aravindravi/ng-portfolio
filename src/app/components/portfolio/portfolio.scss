@@ -12,6 +12,12 @@
 	.video-ideas {
 		background-image: url(#{$recallLoc}/img/ideas.png);
 	}
+	.projects > div {
+		max-height: 460px;
+	}
+	.row1 > div{
+		max-height: 100%;
+	}
 	.more-projects {
 		img {
 			padding-bottom: 0;
@@ -25,8 +31,27 @@
 			font-size: 0.8em;
 		}
 	}
-	#chatify img {
-		max-height: 600px;
+	.row1 .img-container {
+		height: 380px;
+		img {
+			max-height: 340px;
+		}
+		//height: 380px;
+		text-align: center;
+	}
+	.row2 .img-container {
+		height: 300px;
+		text-align: center;
+		img {
+			max-height: 280px;
+		}
+	}
+	.row3 .img-container {
+		height: 300px;
+		text-align: center;
+		img {
+			max-height: 280px;
+		}
 	}
 	#fun-stuff {
 		img {
@@ -47,22 +72,225 @@
 			padding-bottom: 30px;
 		}
 	}
-}
-@media (min-width: 768px) {
-	
-	#chatify .responsive {
-		margin-top: 30px;
-		margin-bottom: 30px;
+
+	#projects
+	{
+	  list-style: none;
+	  -webkit-padding-start: 0;
+	  margin-bottom: 0;
+	  width: 100%;
+	  @include transition(500ms);
+	  margin: auto;
+	  position: relative
 	}
+	#projects > li:last-child
+	{
+	  margin-bottom: 0;
+	}
+	#projects > li
+	{
+	  //height: 600px;
+	  margin: 0 0 4px 0;
+	  position: relative;
+	  background-size: 100% 120%;
+	  -webkit-background-size: 100% 120%;
+	  -moz-background-size: 100% 120%;
+	  -o-background-size: 100% 120%;
+	  background-color: #000;
+	  background-position: 50% 50%;
+	}
+
+	#projects .img-right, 
+	#projects .img-left
+	{
+	  height: 600px;
+	}
+	#projects.project-open
+	{
+	  width: 95%;
+	  margin: auto;
+
+	}
+	#projects #project1
+	{
+	  background: url('../img/carousel/workspace.jpg') no-repeat 100% 50%;
+	  background-size: cover;
+	  background-position: 50% 50%;
+	  background-repeat: no-repeat;
+	  background-color: #000;
+	  position: relative;
+	  height: auto;
+	  margin: 0;
+	}
+	#projects .row {
+	  border-bottom: 12px solid #fff;
+	}
+	#projects #hop
+	{
+	  background: url(#{$hopLoc}/img/prototypes/hop-cover1.png) no-repeat 50% 35%;
+	  background-size: 90%;
+	  background-color: #75bf3a;
+	  border-right: 12px solid #fff;
+	}
+	#projects #citi
+	{
+	  background: url(#{$citiLoc}/img/citi-cover.png) no-repeat 50% 50%;
+	  background-size: 100%;
+	  background-color: #03182c;
+	}
+	#projects #vm
+	{
+	  background: url(#{$vmLoc}/img/vm-cover.png) no-repeat 50% 50%;
+	  background-size: 90%;
+	  background-color: #300;
+	  border-right: 12px solid #fff;
+	}
+	#projects #statement
+	{
+	  background: url(#{$statementLoc}/img/statement-cover.png) no-repeat 50% 50%;
+	  background-size: 120%;
+	  background-color: #229bd7;
+	  border-right: 12px solid #fff;
+	}
+	#projects #crm
+	{
+	  //background: url(#{$crmLoc}/img/statement.jpg) no-repeat 100% 100%;
+	  background-size: cover;
+	  background-color: #066a7a;
+	  border-right: 12px solid #fff;
+	}
+	#projects #recall
+	{
+	  //background-image: url(#{$recallLoc}/img/recall.jpg);
+	  background-color: #f5c745;
+	  background-position: 50%;
+	  background-size: cover;
+	  border-right: 12px solid #fff;
+	  .phone {
+	    background: url(#{$recallLoc}/img/recall-phone.png) no-repeat 100% 50%;
+	    background-size: 96% auto;
+	    background-position: left;
+	  }
+	  .watch {
+	    background: url(#{$recallLoc}/img/recall-watch.png) no-repeat 100% 50%;
+	    background-size: 96% auto;
+	    background-position: left;
+	  }
+	}
+	#projects #fun-stuff
+	{
+	  background-color: $light-gray;
+	  img {
+	    
+	    padding: 12px;
+	    height: 180px;
+	  }
+	  .img-holder {
+	    background-color: $white;
+	    p {
+	      color: $black;
+	      padding-bottom: 12px;
+	      font-family: $unisans;
+	    }
+	  }
+	  .title {
+	    font-weight: bold;
+	    font-size: 2em;
+	    padding: 24px 0 10px 0;
+	  }
+	}
+	#projects #chatify
+	{
+	  //background-image: url(#{$chatifyLoc}/img/chatify.jpg);
+	  background-color: #0d7761;
+	}
+	#projects #milan
+	{
+	  //background-image: url(#{$milanLoc}/img/process/milan.jpg);
+	  background-color: #13d6ed;
+	  border-right: 4px solid #fff;
+	}
+	#projects #project1 .slide-title
+	{
+	  z-index: 3;
+	  position: relative;
+	  margin-top: 40px;
+	}
+	#projects .head1
+	{
+	  text-align: center;
+	  font-family: $opensans;
+	  color: $white;
+	  font-weight: normal;
+	  font-size: 48px;
+	}
+
+	#projects #milan .phone
+	{
+	  background: url('../img/carousel/milan-phone.gif') no-repeat 100% 50%;
+	  background-size: 96% auto;
+	  background-position: left;
+	}
+	#projects #usability .imac
+	{
+	  background: url('../img/carousel/usability-imac.png') no-repeat 100% 50%;
+	  background-size: 96% auto;
+	  background-position: left;
+	}
+	#projects #statement .imac
+	{
+	  background: url('../img/carousel/statement-imac.png') no-repeat 100% 50%;
+	  background-size: 96% auto;
+	  background-position: left;
+	}
+	#projects .head2
+	{
+	  text-align: center;
+	  font-size: 28px;
+	  font-family: $unisans;
+	  padding-bottom: 20px;
+	  color: $white;
+	}
+	#projects .white-btn
+	{
+	  margin-top: 80px;
+	}
+}
+@media (max-width: 768px) {
+	#projects > li .img-right
+  {
+    text-align: right;
+  }
+  #projects .img-right, 
+  #projects .img-left
+  {
+    height: 480px;
+  }
+  .adjust-height {
+    height: 480px;
+  }
+  #projects .head1
+  {
+    text-align: center;
+    font-size: 48px !important;
+    padding-top: 40px !important;
+  }
+  #projects .head2
+  {
+    text-align: center;
+    font-size: 20px !important;
+    padding-bottom: 20px;
+  }
+  #projects .white-btn {
+    margin-top: 50px;
+  }
+
 	
 }
 @media (min-width: 480px) {
 	.page-wrapper.portfolio {
 		.responsive {
-			padding-top: 60px;
-		}
-		.video-ideas {
-			margin-top: 120px;
+			padding-top: 20px;
 		}
 	}
 }
@@ -73,4 +301,30 @@
 	.video-ideas {
 		margin-top: 40px;
 	}
+	#projects .img-right, 
+  #projects .img-left
+  {
+    height: 250px;
+  }
+  .adjust-height {
+    height: 250px;
+  }
+  
+  #projects .white-btn
+  {
+    display: none; 
+  }
+  .inv-overlay {
+    display: block;
+  }
+  #projects .head1
+  {
+    font-size: 36px !important;
+    padding-top: 30px !important;
+  }
+  #projects .head2
+  {
+    font-size: 18px !important;
+    padding-bottom: 20px;
+  }
 }
