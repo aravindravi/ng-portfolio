@@ -31,7 +31,7 @@
 			font-size: 0.8em;
 		}
 	}
-	.row1 .img-container {
+	.row.row1 .img-container {
 		height: 380px;
 		img {
 			max-height: 340px;
@@ -39,14 +39,8 @@
 		//height: 380px;
 		text-align: center;
 	}
-	.row2 .img-container {
-		height: 300px;
-		text-align: center;
-		img {
-			max-height: 280px;
-		}
-	}
-	.row3 .img-container {
+	.row .img-container,
+	.row .img-container {
 		height: 300px;
 		text-align: center;
 		img {
@@ -81,7 +75,26 @@
 	  width: 100%;
 	  @include transition(500ms);
 	  margin: auto;
-	  position: relative
+	  position: relative;
+	  a {
+	  	text-decoration: none;
+	  }
+	}
+	#projects .details {
+		padding-top: 10px;
+		background-color: rgba(0,0,0,0);
+		position: absolute;
+		text-align: center;
+		bottom: -140px;
+		color: $white;
+		transition: all 0.5s ease;
+		margin-left: -15px;
+	}
+	#projects a:hover {
+		.details {
+			bottom: 0;
+			background-color: rgba(0,0,0,0.8);
+		}
 	}
 	#projects > li:last-child
 	{
@@ -127,8 +140,8 @@
 	}
 	#projects #hop
 	{
-	  background: url(#{$hopLoc}/img/prototypes/hop-cover1.png) no-repeat 50% 35%;
-	  background-size: 90%;
+	  background: url(#{$hopLoc}/img/prototypes/hop-cover1.png) no-repeat 50% 25%;
+	  background-size: 70%;
 	  background-color: #7cab52;
 	  border-right: 12px solid #fff;
 	}
