@@ -60,6 +60,10 @@
           controller: 'VisualizationController',
           templateUrl: 'app/components/visualization/visualization.html'
       })
+      .when('/portfolio/infoviz', {
+          controller: 'InfovizController',
+          templateUrl: 'app/components/infoviz/infoviz.html'
+      })
       .otherwise({
           redirectTo: '/'
       });

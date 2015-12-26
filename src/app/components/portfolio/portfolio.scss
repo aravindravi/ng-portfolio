@@ -143,13 +143,15 @@
 	  background: url(#{$hopLoc}/img/prototypes/hop-cover1.png) no-repeat 50% 25%;
 	  background-size: 70%;
 	  background-color: #7cab52;
-	  border-right: 12px solid #fff;
 	}
 	#projects #citi
 	{
 	  background: url(#{$citiLoc}/img/citi-cover.png) no-repeat 50% 20%;
 	  background-size: 110%;
 	  background-color: #082843;
+	}
+	#projects #infoviz {
+		border-right: 12px solid #fff;
 	}
 	#projects #vm
 	{
