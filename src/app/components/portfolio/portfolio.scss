@@ -86,7 +86,7 @@
 		position: absolute;
 		text-align: center;
 		bottom: -140px;
-		color: $white;
+		//color: $white;
 		transition: all 0.5s ease;
 		margin-left: -15px;
 	}
@@ -135,14 +135,16 @@
 	  height: auto;
 	  margin: 0;
 	}
+	
 	#projects .row {
 	  border-bottom: 12px solid #fff;
 	}
 	#projects #hop
 	{
 	  background: url(#{$hopLoc}/img/prototypes/hop-cover1.png) no-repeat 50% 25%;
-	  background-size: 70%;
+	  background-size: 80%;
 	  background-color: #7cab52;
+	  border-right: 12px solid #fff;
 	}
 	#projects #citi
 	{
@@ -151,13 +153,13 @@
 	  background-color: #082843;
 	}
 	#projects #infoviz {
-		border-right: 12px solid #fff;
+		background-color: #7FC5F7;
 	}
 	#projects #vm
 	{
 	  background: url(#{$vmLoc}/img/vm-cover.png) no-repeat 50% 15%;
 	  background-size: 75%;
-	  background-color: #651D1D;
+	  background-color: #A94747;
 	  border-right: 12px solid #fff;
 	}
 	#projects #statement
@@ -171,7 +173,7 @@
 	{
 	  //background: url(#{$crmLoc}/img/statement.jpg) no-repeat 100% 100%;
 	  background-size: cover;
-	  background-color: #066a7a;
+	  background-color: #4EC0D4;
 	  border-right: 12px solid #fff;
 	}
 	#projects #recall
@@ -179,7 +181,7 @@
 	  //background-image: url(#{$recallLoc}/img/recall.jpg);
 	  background-color: #f5c745;
 	  background-position: 50%;
-	  background-size: cover;
+	  //background-size: cover;
 	  border-right: 12px solid #fff;
 	  .phone {
 	    background: url(#{$recallLoc}/img/recall-phone.png) no-repeat 100% 50%;
@@ -217,7 +219,7 @@
 	#projects #chatify
 	{
 	  //background-image: url(#{$chatifyLoc}/img/chatify.jpg);
-	  background-color: #0d7761;
+	  background-color: #3EA58F;
 	}
 	#projects #milan
 	{
