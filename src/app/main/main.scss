@@ -1,13 +1,21 @@
 .page-wrapper.main {
 	h1 {
 		font-size: 64px;
-		color: $dark-gray;
+		font-family: "Quattrocento", "Unisans", "Open sans";
+		color: $primary-color;
 		.highlight {
-			color: $white;
+			color: $primary-color;
 		}
 	}
 	h2 {
-		color: $white;
+		color: $black;
+		font-family: $opensans;
+		font-weight: 100;
+		font-size: 1.5em;
+		line-height: 1.6;
+		.highlight {
+			color: $primary-color;
+		}
 	}
 	.white-btn {
 		margin-bottom: 0;
@@ -23,7 +31,9 @@
 			font-size: 1.5em;
 		}
 	}
-	
+	.hero {
+		padding-top: 80px;
+	}
 	.view-portfolio {
 		margin-top: 60px;
 	}
@@ -46,14 +56,7 @@
 			color: $white;
 		}
 	.social  {
-	    height: 60px;
-	    list-style: none;
-	    z-index: 2;
-	    position: relative;
-	    color: #ffffff;
-	    -webkit-padding-start: 0px;
-	    margin: 12px 0;
-	    font-size: 0.8em;
+	    padding-top: 20px;
 	}
 	.social > ul > li {
 	    display: inline-block;

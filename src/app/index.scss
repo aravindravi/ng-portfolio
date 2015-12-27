@@ -108,7 +108,7 @@ header
   width: 100%;
   height: 50px;
   z-index: 5;
-  font-family: $unisans;
+  font-family: $opensans;
   color: $primary-color;
   background-color: rgba(255,255,255,0);
   position: fixed;
@@ -136,6 +136,7 @@ header.state3
 header.state2 .name
 {
   color: $primary-color;
+  font-family: $unisans;
   &:hover {
     color: #fff;
     background-color: #1EA5BB;
@@ -146,12 +147,13 @@ header.state2 .name
 header.state2 .menu > li > a
 {
   color: #a6a6a6;
+  font-weight: 100;
 }
 header.state2  .menu > .active > a,
 header.state2  .menu > .active > a:hover, 
 header.state2  .menu > .active > a:focus
 {
-  color: $primary-color ;
+  color: $primary-color;
 }
 header.state2 .menu > .active > a,
 header.state2 .menu > .active > a:hover,
@@ -374,12 +376,12 @@ section > .fp-tableCell
   h3 {
      //display: inline-block;
       font-family: $opensans;
-      font-weight: 600;
+      font-weight: 900;
       padding-left: 10px; 
   }
   h4 {
     font-weight: normal;
-    font-family: $unisans;
+    font-family: $opensans;
     font-size: 1.5em;
     padding: 20px 0;
   }
@@ -397,11 +399,11 @@ section > .fp-tableCell
 
   section h3 {
       font-size: 2.5em;
-      font-family: $unisans;
-      font-weight: 600;
+      font-family: $opensans;
+      font-weight: 400;
       margin-top: 60px;
       margin-bottom: 40px;
-      font-weight: lighter;
+      letter-spacing: -0.01em;
     }
   
   .overlay+div {

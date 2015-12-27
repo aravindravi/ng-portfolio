@@ -5,14 +5,18 @@ $infoviz-primary-color: #0D9EBF;
 	h3, h4 {
 		color: $infoviz-primary-color;
 	}
-	blockquote {
-		font-family: 'Quattrocento', Georgia;
-		font-size: 2em;
-		border-left: 0;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		color: rgba(0,0,0,.75);
-		letter-spacing: .01em;
+	.design-question {		
+		blockquote {
+			background-color: $infoviz-primary-color;
+			color: $white;
+			padding: 60px;
+			font-family: 'Quattrocento', Georgia;
+			font-size: 2em;
+			border-left: 0;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			letter-spacing: .01em;
+		}
 	}
 	.hero {
 		background: url(#{$chatifyLoc}/img/chatify.jpg) #000 fixed;

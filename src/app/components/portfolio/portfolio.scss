@@ -1,5 +1,31 @@
 .page-wrapper.portfolio {
 	margin-top: 50px;
+	.hero {
+		padding: 50px 0 80px 0;
+		h1 {
+			font-size: 3.5em;
+			font-family: "Quattrocento", "Unisans", "Open sans";
+			color: $primary-color;
+		}
+		h2 {
+			color: $black;
+			font-family: $opensans;
+			font-weight: 100;
+			font-size: 1.8em;
+			line-height: 1.6;
+			letter-spacing: -0.03em;
+			.highlight {
+				font-family: "Quattrocento", "Open sans", "Helvetica", "Arial";
+			}
+		}
+		.social  {
+		    padding-top: 40px;
+		}
+		.social > ul > li {
+			padding: 0 28px 0 0;
+		}
+	}
+	
 	.hop-video {
 		max-height: 94%;
 	    max-width: 90%;
@@ -262,8 +288,8 @@
 	#projects .head2
 	{
 	  text-align: center;
-	  font-size: 28px;
-	  font-family: $unisans;
+	  font-size: 1.5em;
+	  font-family: $opensans;
 	  padding-bottom: 20px;
 	  color: $white;
 	}
