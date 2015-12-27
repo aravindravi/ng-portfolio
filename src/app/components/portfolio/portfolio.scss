@@ -18,6 +18,12 @@
 				font-family: "Quattrocento", "Open sans", "Helvetica", "Arial";
 			}
 		}
+		h3 {
+			font-size: 1em;
+			font-weight: 100;
+			padding-left: 0;
+			margin-top: 20px;
+		}
 		.social  {
 		    padding-top: 40px;
 		}
@@ -57,20 +63,24 @@
 			font-size: 0.8em;
 		}
 	}
+	.img-container {
+		margin: 0 -15px;
+	}
 	.row.row1 .img-container {
-		height: 380px;
-		img {
-			max-height: 340px;
-		}
+		height: 420px;
 		//height: 380px;
 		text-align: center;
 	}
-	.row .img-container,
-	.row .img-container {
-		height: 300px;
+	.row.row2 .img-container,
+	.row.row3 .img-container {
+		height: 380px;
 		text-align: center;
-		img {
-			max-height: 280px;
+	}
+	.row.row4 .img-container {
+		height: 380px;
+		text-align: center;
+		.head2 {
+			padding-top: 20px;
 		}
 	}
 	#fun-stuff {
@@ -106,20 +116,26 @@
 	  	text-decoration: none;
 	  }
 	}
+	#projects .row > div {
+		padding-bottom: 70px;
+		overflow: hidden;
+	}
 	#projects .details {
-		padding-top: 10px;
-		background-color: rgba(0,0,0,0);
+		color: $primary-color;
 		position: absolute;
 		text-align: center;
-		bottom: -140px;
+		bottom: -40px;
 		//color: $white;
-		transition: all 0.5s ease;
+		transition: all 300ms ease;
 		margin-left: -15px;
+		.description {
+			font-size: 0.8em;
+		}
 	}
 	#projects a:hover {
 		.details {
 			bottom: 0;
-			background-color: rgba(0,0,0,0.8);
+			color: $white;
 		}
 	}
 	#projects > li:last-child
@@ -168,56 +184,68 @@
 	#projects #hop
 	{
 	  background: url(#{$hopLoc}/img/prototypes/hop-cover1.png) no-repeat 50% 25%;
-	  background-size: 80%;
+	  background-size: 120%;
 	  background-color: #7cab52;
 	  border-right: 12px solid #fff;
+	  transition: 300ms;
+	  &:hover {
+		  	background-size: 110%;
+		  	background-position: 50% 10%;
+		}
 	}
 	#projects #citi
 	{
-	  background: url(#{$citiLoc}/img/citi-cover.png) no-repeat 50% 20%;
-	  background-size: 110%;
+	  background: url(#{$citiLoc}/img/citi-cover.png) no-repeat 50% 5%;
+	  background-size: 150%;
 	  background-color: #082843;
 	}
 	#projects #infoviz {
+		background: url(#{$infovizLoc}/img/infoviz-cover.png) no-repeat 50% 20%;
 		background-color: #7FC5F7;
+		background-size: 90%;
+		transition: 300ms;
+		&:hover {
+	  	background-size: 85%;
+	  	background-position: 50% 10%;
+	  }
 	}
 	#projects #vm
 	{
-	  background: url(#{$vmLoc}/img/vm-cover.png) no-repeat 50% 15%;
-	  background-size: 75%;
+	  background: url(#{$vmLoc}/img/vm-cover.png) no-repeat 50% 20%;
+	  background-size: 95%;
 	  background-color: #A94747;
 	  border-right: 12px solid #fff;
 	}
 	#projects #statement
 	{
 	  background: url(#{$statementLoc}/img/statement-cover.png) no-repeat 50% 40%;
-	  background-size: 140%;
+	  background-size: 170%;
 	  background-color: #217298;
 	  border-right: 12px solid #fff;
 	}
 	#projects #crm
 	{
-	  //background: url(#{$crmLoc}/img/statement.jpg) no-repeat 100% 100%;
-	  background-size: cover;
+	  background: url(#{$crmLoc}/img/prototypes/crm-display.png) no-repeat 50% 20%;
+	  background-size: 96%;
 	  background-color: #4EC0D4;
 	  border-right: 12px solid #fff;
+	  transition: 300ms;
+	  &:hover {
+	  	background-size: 90%;
+	  	background-position: 50% 10%;
+	  }
 	}
 	#projects #recall
 	{
-	  //background-image: url(#{$recallLoc}/img/recall.jpg);
+	  background: url(#{$recallLoc}/img/ideas.png) no-repeat 50% 20%;
 	  background-color: #f5c745;
-	  background-position: 50%;
+	  background-size: 50%;
 	  //background-size: cover;
 	  border-right: 12px solid #fff;
-	  .phone {
-	    background: url(#{$recallLoc}/img/recall-phone.png) no-repeat 100% 50%;
-	    background-size: 96% auto;
-	    background-position: left;
-	  }
-	  .watch {
-	    background: url(#{$recallLoc}/img/recall-watch.png) no-repeat 100% 50%;
-	    background-size: 96% auto;
-	    background-position: left;
+	  transition: 300ms;
+	  &:hover {
+	  	background-size: 45%;
+	  	background-position: 50% 10%;
 	  }
 	}
 	#projects #fun-stuff
@@ -244,13 +272,25 @@
 	}
 	#projects #chatify
 	{
-	  //background-image: url(#{$chatifyLoc}/img/chatify.jpg);
+	  background: url(#{$chatifyLoc}/img/prototypes/chatify-phone.png) no-repeat 50% 18%;
+	  background-size: 47%;
 	  background-color: #3EA58F;
+	  transition: 300ms;
+	  &:hover {
+	  	background-size: 44%;
+	  	background-position: 50% 10%;
+	  }
 	}
 	#projects #milan
 	{
-	  //background-image: url(#{$milanLoc}/img/process/milan.jpg);
+	  background: url(#{$milanLoc}/img/prototypes/food-groups.png) no-repeat 50% 20%;
+	  background-size: 29%;
 	  background-color: #5abeca;
+	  transition: 300ms;
+	  &:hover {
+	  	background-size: 27%;
+	  	background-position: 50% 10%;
+	  }
 	}
 	#projects #project1 .slide-title
 	{
@@ -288,10 +328,11 @@
 	#projects .head2
 	{
 	  text-align: center;
-	  font-size: 1.5em;
+	  font-size: 1.4em;
 	  font-family: $opensans;
-	  padding-bottom: 20px;
+	  //padding-bottom: 20px;
 	  color: $white;
+	  letter-spacing: -0.02em;
 	}
 	#projects .white-btn
 	{
@@ -336,37 +377,33 @@
 		}
 	}
 }
-@media (max-width: 480px) {
-	.responsive {
-		padding-top: 40px;
+@media (max-width: 680px) {
+	.page-wrapper.portfolio {
+		.hero {
+			padding: 30px 0;
+			h1 {
+				font-size: 1.5em;
+			}
+			h2 {
+				font-size: 1em;
+			}
+		}
+		.responsive {
+			padding-top: 40px;
+		}
+		.video-ideas {
+			margin-top: 40px;
+		}
+		
+	  #projects .head1
+	  {
+	    font-size: 36px !important;
+	    padding-top: 30px !important;
+	  }
+	  #projects .head2
+	  {
+	    font-size: 1.2em !important;
+	    padding-bottom: 20px;
+	  }
 	}
-	.video-ideas {
-		margin-top: 40px;
-	}
-	#projects .img-right, 
-  #projects .img-left
-  {
-    height: 250px;
-  }
-  .adjust-height {
-    height: 250px;
-  }
-  
-  #projects .white-btn
-  {
-    display: none; 
-  }
-  .inv-overlay {
-    display: block;
-  }
-  #projects .head1
-  {
-    font-size: 36px !important;
-    padding-top: 30px !important;
-  }
-  #projects .head2
-  {
-    font-size: 18px !important;
-    padding-bottom: 20px;
-  }
 }
