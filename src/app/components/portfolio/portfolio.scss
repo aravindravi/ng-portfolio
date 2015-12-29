@@ -272,12 +272,12 @@
 	}
 	#projects #chatify
 	{
-	  background: url(#{$chatifyLoc}/img/prototypes/chatify-phone.png) no-repeat 50% 18%;
-	  background-size: 47%;
-	  background-color: #3EA58F;
+	  background: url(#{$chatifyLoc}/img/prototypes/chatify-cover.png) no-repeat 50% 18%;
+	  background-size: 63%;
+	  background-color: #25DCB4;
 	  transition: 300ms;
 	  &:hover {
-	  	background-size: 44%;
+	  	background-size: 58%;
 	  	background-position: 50% 10%;
 	  }
 	}
@@ -289,6 +289,17 @@
 	  transition: 300ms;
 	  &:hover {
 	  	background-size: 27%;
+	  	background-position: 50% 10%;
+	  }
+	}
+	#projects #wscpa
+	{
+	  background: url(#{$wscpaLoc}/img/wscpa-cover.png) no-repeat 50% 20%;
+	  background-size: 78%;
+	  background-color: #5abeca;
+	  transition: 300ms;
+	  &:hover {
+	  	background-size: 70%;
 	  	background-position: 50% 10%;
 	  }
 	}
