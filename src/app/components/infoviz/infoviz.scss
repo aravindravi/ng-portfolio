@@ -16,13 +16,16 @@ $infoviz-primary-color: #0D9EBF;
 		}
 	}
 	.hero {
-		background: url(#{$chatifyLoc}/img/chatify.jpg) #000 fixed;
+		//background: url(#{$chatifyLoc}/img/chatify.jpg) #000 fixed;
+		margin-bottom: 40px;
+		background-color: $infoviz-primary-color;
 		background-size: 100% 120%;
 		background-position-y: 100%;
 		color: $white;
 		.roles {
 				li {
-					text-align: center;
+					
+					padding-top: 10px;
 				}
 				.lnr {
 					font-size: 1.5em;
@@ -38,13 +41,22 @@ $infoviz-primary-color: #0D9EBF;
 		  h1 {
 			  font-size: 72px;
 			  font-family: $opensans;
-			  margin-top: 80px;
+			  margin-top: 40px;
 			}
 			h2 {
 			  font-size: 48px;
 			  font-family: $unisans;
 			  line-height: 1.5em;
 			}
+			.project-summary h3, 
+			.project-summary h4{
+				color: $white;
+				padding-bottom: 0;
+				padding-top: 60px;
+			}
+	}
+	.tableau {
+		overflow: scroll;
 	}
 	
 }
