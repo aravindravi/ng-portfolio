@@ -14,13 +14,15 @@
   function routeConfig($routeProvider) {
     $routeProvider
       .when('/', {
+          templateUrl: 'app/main/main.html',
+          controller: 'MainController'
+      })
+      .when('/portfolio', {
           templateUrl: 'app/components/portfolio/portfolio.html',
-          controller: 'PortfolioController',
-          controllerAs: 'portfolio'
+          controller: 'PortfolioController'
       })
       .when('/about', {
           controller: 'AboutController',
-          controllerAs: 'about',
           templateUrl: 'app/components/about/about.html'
       })
       .when('/portfolio/hop', {

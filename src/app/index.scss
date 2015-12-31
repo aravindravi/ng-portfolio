@@ -158,10 +158,10 @@ header.state2 .menu > .active > a:hover,
 header.state2 .menu > .active > a:focus {
   border-bottom-color: $primary-color;
 }
-.logo {
+header .logo {
   width: 40px;
   height: 40px;
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgODAgODAiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgICAgc3Ryb2tlOiAjMWVhNWJiOwogICAgICAgIHN0cm9rZS13aWR0aDogNHB4OwogICAgICB9CgogICAgICAuY2xzLTIsIC5jbHMtMywgLmNscy00IHsKICAgICAgICBmb250LXNpemU6IDEyOHB4OwogICAgICB9CgogICAgICAuY2xzLTMsIC5jbHMtNCwgLmNscy02IHsKICAgICAgICB0ZXh0LWFuY2hvcjogbWlkZGxlOwogICAgICB9CgogICAgICAuY2xzLTQsIC5jbHMtNiB7CiAgICAgICAgZmlsbDogIzFlYTViYjsKICAgICAgICBmb250LWZhbWlseTogIlVuaVNhbnNMaWdodCI7CiAgICAgIH0KCiAgICAgIC5jbHMtNSwgLmNscy02IHsKICAgICAgICBmb250LXNpemU6IDY0cHg7CiAgICAgIH0KICAgIDwvc3R5bGU+CgogICAgPHBhdGggaWQ9InRleHQtcGF0aC0xIiBkPSJNIE5hTiBOYU5MIE5hTiBOYU4iLz4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBjbGFzcz0iY2xzLTEiLz4KICA8dGV4dCBjbGFzcz0iY2xzLTIiPjx0ZXh0UGF0aCB4bGluazpocmVmPSIjdGV4dC1wYXRoLTEiIHN0YXJ0T2Zmc2V0PSI1MCUiIGNsYXNzPSJjbHMtMyI+PHRzcGFuIHg9IjAiIGNsYXNzPSJjbHMtNCI+YXI8L3RzcGFuPjwvdGV4dFBhdGg+PC90ZXh0PgogIDx0ZXh0IHg9IjM4IiB5PSI1NiIgY2xhc3M9ImNscy01Ij48dHNwYW4geD0iMzgiIGNsYXNzPSJjbHMtNiI+YXI8L3RzcGFuPjwvdGV4dD4KPC9zdmc+Cg==") no-repeat;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgODAgODAiPgogIDxpbWFnZSB4bGluazpocmVmPSJkYXRhOmltZy9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFDZ0FBQUFvQ0FNQUFBQzdJRWhmQUFBQUJHZEJUVUVBQUxHUEMveGhCUUFBQUNCalNGSk5BQUI2SmdBQWdJUUFBUG9BQUFDQTZBQUFkVEFBQU9wZ0FBQTZtQUFBRjNDY3VsRThBQUFBUDFCTVZFVUFBQUFwcExrbXBib21wYm9tcGJvbXBib21wYm9tcGJvbXBib21wYm9tcGJvbXBib21wYm9tcGJvbXBib21wYm9tcGJvbXBib3BwTGttcGJvQUFBQWYwM21zQUFBQUVuUlNUbE1BOERPWnpPN2RSTHNlZDJhSXFnbFZJaEc1SUVsOEFBQUFBV0pMUjBRQWlBVWRTQUFBQUFsd1NGbHpBQUFXSlFBQUZpVUJTVklrOEFBQUFLQkpSRUZVT012dDFNc09oQ0FNQlZDaGxESVVCdVgrLzcrT09qTTdJMTJZdVBFdUNFMU9DSStHcVJzejllNE0yYUNiREhFUHZCRjZDb3hJL2w5TEFsNEhNQ09waUNhVWIxMVFWZDRIc01sdklkYTloSXoyV09JMmhqbzhqR0lib1JkQXI2WGtObytnRDBoRU5ZTFA0Y3kwN0pPRnptRk54ajJ5R2lHc01KQVJObmdiWEp1QW1xeGRVY0xvd3FVeXdMSG1mV20wNFJNZTVZRTNRUE5uYjh3SDJZUVNGTjF6ZWhJQUFBQUFTVVZPUks1Q1lJST0iIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIvPgo8L3N2Zz4K") no-repeat;
   display: inline-block;
   margin-top: 5px;
 }
@@ -242,7 +242,8 @@ header.state2 .menu > .active > a:focus {
       right: 0;
       bottom: 0;
       top: 0;
-      background-color: rgba(0,0,0,0.6);
+      background-color: rgba(0,0,0,0.4);
+      z-index: 2;
   }
 .inv-overlay {
   background-color: rgba(0,0,0,0);
@@ -660,7 +661,7 @@ section > .fp-tableCell
 
 .social .lnr
 {
-  color: #A6A6A6;
+  color: #BBB;
   font-size: 1.5em;
   @include transition(300ms);
 }

@@ -1,8 +1,8 @@
 .page-wrapper.main {
 	h1 {
-		font-size: 64px;
+		font-size: 3em;
 		font-family: "Quattrocento", "Unisans", "Open sans";
-		color: $primary-color;
+		color: $white;
 		.highlight {
 			color: $primary-color;
 		}
@@ -21,8 +21,9 @@
 		margin-bottom: 0;
 	}
 	.title {
-		margin-top: 140px;
+		margin-top: 160px;
 	}
+	
 	.intro-snippets {
 		margin-top: 120px;
 		.lnr {
@@ -38,8 +39,7 @@
 		margin-top: 60px;
 	}
 	.description {
-		color: #BBB;
-		padding-top: 20px;
+		color: #FFF;
 		font-size: 1em;
 		
 	}
@@ -54,6 +54,7 @@
 	}
 	.highlight {
 			color: $white;
+			font-weight: 400;
 		}
 	.social  {
 	    padding-top: 20px;
