@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="40" height="40" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #1ea5bb;
+        stroke-width: 4px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        font-size: 128px;
+      }
+
+      .cls-3, .cls-4, .cls-6 {
+        text-anchor: middle;
+      }
+
+      .cls-4, .cls-6 {
+        fill: #1ea5bb;
+        font-family: "UniSansLight";
+      }
+
+      .cls-5, .cls-6 {
+        font-size: 64px;
+      }
+    </style>
+
+    <path id="text-path-1" d="M NaN NaNL NaN NaN"/>
+  </defs>
+  <rect width="80" height="80" class="cls-1"/>
+  <text class="cls-2"><textPath xlink:href="#text-path-1" startOffset="50%" class="cls-3"><tspan x="0" class="cls-4">ar</tspan></textPath></text>
+  <text x="38" y="56" class="cls-5"><tspan x="38" class="cls-6">ar</tspan></text>
+</svg>

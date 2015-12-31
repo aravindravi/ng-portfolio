@@ -1,6 +1,10 @@
 $infoviz-primary-color: #0D9EBF;
 
 .page-wrapper.infoviz {
+	hr {
+		border-color: #0D9EBF;
+		margin-top: 40px;
+	}
 	margin-top: 50px;
 	h3, h4 {
 		color: $infoviz-primary-color;
@@ -12,24 +16,19 @@ $infoviz-primary-color: #0D9EBF;
 			border-left: 0;
 			-webkit-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale;
-			letter-spacing: .01em;
 		}
 	}
 	.hero {
 		//background: url(#{$chatifyLoc}/img/chatify.jpg) #000 fixed;
-		margin-bottom: 40px;
-		background-color: $infoviz-primary-color;
 		background-size: 100% 120%;
 		background-position-y: 100%;
-		color: $white;
 		.roles {
+			margin-left: -15px;
 				li {
-					
 					padding-top: 10px;
 				}
 				.lnr {
 					font-size: 1.5em;
-					color: $white;
 					font-size: 1.2em;
 					padding-bottom: 0;
 				}
@@ -39,23 +38,29 @@ $infoviz-primary-color: #0D9EBF;
 				}
 			}
 		  h1 {
-			  font-size: 72px;
-			  font-family: $opensans;
+			  font-size: 4em;
+			  color: $infoviz-primary-color;
 			  margin-top: 40px;
+			  margin-bottom: 40px;
 			}
 			h2 {
 			  font-size: 48px;
 			  font-family: $unisans;
 			  line-height: 1.5em;
+			  color: $infoviz-primary-color;
+			}
+			.project-summary {
+				padding-top: 20px;
 			}
 			.project-summary h3, 
 			.project-summary h4{
-				color: $white;
 				padding-bottom: 0;
-				padding-top: 60px;
+				padding-top: 20px;
 			}
 	}
 	.tableau {
+		.tableauPlaceholder {
+		}
 		overflow: scroll;
 	}
 	
