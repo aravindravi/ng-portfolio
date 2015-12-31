@@ -1,6 +1,7 @@
 $crm-primary-color: #1EA5BB;
 
 .page-wrapper.crm {
+
 	h3, h4 {
 		color: $crm-primary-color;
 	}
@@ -33,20 +34,19 @@ $crm-primary-color: #1EA5BB;
 		}
 	}
 	.hero {
-		background: url(#{$crmLoc}/img/statement.jpg) #000 fixed;
+		//background: url(#{$crmLoc}/img/statement.jpg) #000 fixed;
 		background-size: 100% 120%;
 	    -webkit-background-size: 100% 120%;
 	    -moz-background-size: 100% 120%;
 	    -o-background-size: 100% 120%;
-		color: $white;
+		//color: $white;
 			.roles {
+				margin-left: -15px;
 				li {
 					text-align: center;
 				}
 				.lnr {
 					font-size: 1.5em;
-					color: $white;
-					font-size: 1.2em;
 					padding-bottom: 0;
 				}
 				p {
@@ -60,9 +60,10 @@ $crm-primary-color: #1EA5BB;
 			    background-position: left;
 			}
 		    h1 {
-			  font-size: 72px;
-			  font-family: $opensans;
-			  margin-top: 80px;
+			  font-size: 3em;
+			  margin-top: 40px;
+			  margin-bottom: 40px;
+			  color: $crm-primary-color;
 			}
 			h2 {
 			  font-size: 48px;
