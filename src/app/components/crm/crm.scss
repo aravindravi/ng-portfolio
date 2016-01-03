@@ -23,6 +23,17 @@ $crm-primary-color: #1EA5BB;
 	    color: $white;
 	  }
 	}
+	blockquote {
+		font-family: 'Quattrocento', Georgia;
+		font-size: 2em;
+		border-left: 0;
+		padding-left: 0;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	ul {
+		margin-left: -15px;
+	}
 	.lnr {
 			color: $crm-primary-color;
 		}

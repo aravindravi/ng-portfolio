@@ -191,8 +191,10 @@ header .logo {
   border-radius: 0;
   font-size: 18px;
   font-family: $unisans;
+  letter-spacing: .04em;
+  font-size: 1em;
   margin: 20px 0;
-  padding: 26px 60px;
+  padding: 26px 44px;
   background-color: transparent;
   border: 1px solid $primary-color;
   color: $primary-color;
@@ -209,7 +211,6 @@ header .logo {
   border: 2px solid $white;
   color: #fff;
   margin-bottom: 40px;
-  padding: 26px 60px;
   font-size: 1em;
   background-color: transparent;
   &:hover, &:active, &:focus {
@@ -871,7 +872,7 @@ footer .social > ul
 #view-portfolio, #show-more
 {
   margin: 20px 0;
-  padding: 20px 50px;
+  padding: 20px 44px;
   background-color: transparent;
   border: 1px solid $primary-color;
   color: $primary-color;
