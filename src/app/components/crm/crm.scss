@@ -1,4 +1,4 @@
-$crm-primary-color: #1EA5BB;
+$crm-primary-color: #1CBAD4;
 
 .page-wrapper.crm {
 
@@ -6,6 +6,16 @@ $crm-primary-color: #1EA5BB;
 		color: $crm-primary-color;
 	}
 	margin-top: 50px;
+	.big-idea {
+		background: #1CBAD4;
+	    color: white;
+	    padding: 40px;
+	    font-weight: 100;
+	    font-size: 1.5em;
+	    .lnr {
+	    	color: $white;
+	    }
+	}
 	.btn
 	{
 	  border-radius: 0;
@@ -34,6 +44,7 @@ $crm-primary-color: #1EA5BB;
 	ul {
 		margin-left: -15px;
 	}
+
 	.lnr {
 			color: $crm-primary-color;
 		}
@@ -50,7 +61,6 @@ $crm-primary-color: #1EA5BB;
 	    -webkit-background-size: 100% 120%;
 	    -moz-background-size: 100% 120%;
 	    -o-background-size: 100% 120%;
-		//color: $white;
 			.roles {
 				margin-left: -15px;
 				li {
@@ -59,6 +69,7 @@ $crm-primary-color: #1EA5BB;
 				.lnr {
 					font-size: 1.5em;
 					padding-bottom: 0;
+					color: $white;
 				}
 				p {
 					line-height: 1.4;
@@ -70,6 +81,7 @@ $crm-primary-color: #1EA5BB;
 			    background-size: 96% auto;
 			    background-position: left;
 			}
+			
 		    h1 {
 			  font-size: 3em;
 			  margin-top: 40px;
@@ -80,6 +92,13 @@ $crm-primary-color: #1EA5BB;
 			  font-size: 48px;
 			  font-family: $unisans;
 			  line-height: 1.5em;
+			}
+			.project-summary {
+				color: $white;
+				background-color: $crm-primary-color;
+				h1, h2, h3, h4 {
+					color: $white;
+				}
 			}
 	}
 	.product {

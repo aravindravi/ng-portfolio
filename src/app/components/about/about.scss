@@ -83,6 +83,12 @@
 	img {
 		padding-bottom: 0;
 	}
+	.blog-posts {
+		img {
+			height: 220px;
+			width: auto;
+		}
+	}
 	.lnr {
 		color: $primary-color;
 	}
