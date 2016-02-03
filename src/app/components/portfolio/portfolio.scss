@@ -78,7 +78,7 @@
 		text-align: center;
 	}
 	.row.row4 .img-container {
-		height: 380px;
+		height: 360px;
 		text-align: center;
 		.head2 {
 			padding-top: 20px;
@@ -192,57 +192,60 @@
 	{
 		a {
 		  background: url(#{$hopLoc}/img/prototypes/hop-cover1.png) no-repeat 50% 25%;
-		  background-size: 130%;
+		  background-size: auto 84%;
 		  background-color: #7cab52;
 		  transition: 300ms;
 		  &:hover {
-			  	background-size: 115%;
+			  	background-size: auto 80%;
 			  	background-position: 50% 10%;
 			}
 		}
 	}
 	#projects #citi
 	{
-	  background: url(#{$citiLoc}/img/citi-cover.png) no-repeat 50% 5%;
-	  background-size: 150%;
-	  background-color: #082843;
+		.temp {
+		  background: url(#{$citiLoc}/img/citi-cover.png) no-repeat 50% 5%;
+		  background-size: auto 94%;
+		  background-color: #082843;
+		}
 	}
 	#projects #infoviz {
 		a {
 			background: url(#{$infovizLoc}/img/infoviz-cover.png) no-repeat 50% 20%;
 			background-color: #7FC5F7;
-			background-size: 90%;
+			background-size: auto 88%;
 			transition: 300ms;
 			&:hover {
-		  	background-size: 85%;
+		  	background-size: auto 78%;
 		  	background-position: 50% 10%;
 		  }
 		}
 	}
 	#projects #vm
 	{
-
-	  background: url(#{$vmLoc}/img/vm-cover.png) no-repeat 50% 20%;
-	  background-size: 95%;
-	  background-color: #A94747;
-	  border-right: 12px solid #fff;
+		.temp {
+		  background: url(#{$vmLoc}/img/vm-cover.png) no-repeat 50% 20%;
+		  background-size: auto 88%;
+		  background-color: #A94747;
+		}
 	}
 	#projects #statement
 	{
-	  background: url(#{$statementLoc}/img/statement-cover.png) no-repeat 50% 40%;
-	  background-size: 170%;
-	  background-color: #217298;
-	  border-right: 12px solid #fff;
+		.temp {
+		  background: url(#{$statementLoc}/img/statement-cover.png) no-repeat 50% 40%;
+		  background-size: auto 80%;
+		  background-color: #217298;
+		}
 	}
 	#projects #crm
 	{
 	  a {
 	  background: url(#{$crmLoc}/img/prototypes/crm-display.png) no-repeat 50% 20%;
-	  background-size: 96%;
+	  background-size: auto 85%;
 	  background-color: #4EC0D4;
 	  transition: 300ms;
 	  &:hover {
-	  	background-size: 90%;
+	  	background-size: auto 78%;
 	  	background-position: 50% 10%;
 	  }
 	}
@@ -252,10 +255,10 @@
 		a {
 		  background: url(#{$recallLoc}/img/ideas.png) no-repeat 50% 20%;
 		  background-color: #f5c745;
-		  background-size: 50%;
+		  background-size: auto 85%;
 		  transition: 300ms;
 		  &:hover {
-		  	background-size: 45%;
+		  	background-size: auto 76%;
 		  	background-position: 50% 10%;
 		  }
 		}
@@ -286,11 +289,11 @@
 	{
 		a {
 		  background: url(#{$chatifyLoc}/img/prototypes/chatify-cover.png) no-repeat 50% 18%;
-		  background-size: 63%;
+		  background-size: auto 85%;
 		  background-color: #25DCB4;
 		  transition: 300ms;
 		  &:hover {
-		  	background-size: 58%;
+		  	background-size: auto 78%;
 		  	background-position: 50% 10%;
 		  }
 		}
@@ -299,11 +302,11 @@
 	{
 		a {
 		  background: url(#{$milanLoc}/img/prototypes/food-groups.png) no-repeat 50% 20%;
-		  background-size: 27%;
+		  background-size: auto 82%;
 		  background-color: #5abeca;
 		  transition: 300ms;
 		  &:hover {
-		  	background-size: 25%;
+		  	background-size: auto 76%;
 		  	background-position: 50% 10%;
 		  }
 		}
@@ -312,11 +315,11 @@
 	{
 		.temp {
 		  background: url(#{$wscpaLoc}/img/wscpa-cover.png) no-repeat 50% 20%;
-		  background-size: 74%;
+		  background-size: auto 85%;
 		  background-color: #20DCA2;
 		  transition: 300ms;
 		  &:hover {
-		  	background-size: 68%;
+		  	background-size: auto 76%;
 		  	background-position: 50% 10%;
 		  }
 		}
