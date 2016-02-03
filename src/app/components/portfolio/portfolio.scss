@@ -118,7 +118,7 @@
 	  }
 	}
 	#projects .row > div {
-		padding-bottom: 70px;
+		padding-bottom: 15px;
 		overflow: hidden;
 	}
 	#projects .details {
@@ -126,7 +126,7 @@
 		position: absolute;
 		text-align: center;
 		bottom: -40px;
-		//color: $white;
+		color: transparent;
 		transition: all 300ms ease;
 		margin-left: -15px;
 		.description {
@@ -135,7 +135,13 @@
 	}
 	#projects a:hover {
 		.details {
-			bottom: 0;
+			bottom: 0px;
+			color: $white;
+		}
+	}
+	#projects .temp:hover {
+		.details {
+			bottom: 0px;
 			color: $white;
 		}
 	}
@@ -184,14 +190,15 @@
 	}
 	#projects #hop
 	{
-	  background: url(#{$hopLoc}/img/prototypes/hop-cover1.png) no-repeat 50% 25%;
-	  background-size: 120%;
-	  background-color: #7cab52;
-	  border-right: 12px solid #fff;
-	  transition: 300ms;
-	  &:hover {
-		  	background-size: 110%;
-		  	background-position: 50% 10%;
+		a {
+		  background: url(#{$hopLoc}/img/prototypes/hop-cover1.png) no-repeat 50% 25%;
+		  background-size: 130%;
+		  background-color: #7cab52;
+		  transition: 300ms;
+		  &:hover {
+			  	background-size: 115%;
+			  	background-position: 50% 10%;
+			}
 		}
 	}
 	#projects #citi
@@ -201,17 +208,20 @@
 	  background-color: #082843;
 	}
 	#projects #infoviz {
-		background: url(#{$infovizLoc}/img/infoviz-cover.png) no-repeat 50% 20%;
-		background-color: #7FC5F7;
-		background-size: 90%;
-		transition: 300ms;
-		&:hover {
-	  	background-size: 85%;
-	  	background-position: 50% 10%;
-	  }
+		a {
+			background: url(#{$infovizLoc}/img/infoviz-cover.png) no-repeat 50% 20%;
+			background-color: #7FC5F7;
+			background-size: 90%;
+			transition: 300ms;
+			&:hover {
+		  	background-size: 85%;
+		  	background-position: 50% 10%;
+		  }
+		}
 	}
 	#projects #vm
 	{
+
 	  background: url(#{$vmLoc}/img/vm-cover.png) no-repeat 50% 20%;
 	  background-size: 95%;
 	  background-color: #A94747;
@@ -226,28 +236,29 @@
 	}
 	#projects #crm
 	{
+	  a {
 	  background: url(#{$crmLoc}/img/prototypes/crm-display.png) no-repeat 50% 20%;
 	  background-size: 96%;
 	  background-color: #4EC0D4;
-	  border-right: 12px solid #fff;
 	  transition: 300ms;
 	  &:hover {
 	  	background-size: 90%;
 	  	background-position: 50% 10%;
 	  }
 	}
+	}
 	#projects #recall
 	{
-	  background: url(#{$recallLoc}/img/ideas.png) no-repeat 50% 20%;
-	  background-color: #f5c745;
-	  background-size: 50%;
-	  //background-size: cover;
-	  border-right: 12px solid #fff;
-	  transition: 300ms;
-	  &:hover {
-	  	background-size: 45%;
-	  	background-position: 50% 10%;
-	  }
+		a {
+		  background: url(#{$recallLoc}/img/ideas.png) no-repeat 50% 20%;
+		  background-color: #f5c745;
+		  background-size: 50%;
+		  transition: 300ms;
+		  &:hover {
+		  	background-size: 45%;
+		  	background-position: 50% 10%;
+		  }
+		}
 	}
 	#projects #fun-stuff
 	{
@@ -273,36 +284,42 @@
 	}
 	#projects #chatify
 	{
-	  background: url(#{$chatifyLoc}/img/prototypes/chatify-cover.png) no-repeat 50% 18%;
-	  background-size: 63%;
-	  background-color: #25DCB4;
-	  transition: 300ms;
-	  &:hover {
-	  	background-size: 58%;
-	  	background-position: 50% 10%;
-	  }
+		a {
+		  background: url(#{$chatifyLoc}/img/prototypes/chatify-cover.png) no-repeat 50% 18%;
+		  background-size: 63%;
+		  background-color: #25DCB4;
+		  transition: 300ms;
+		  &:hover {
+		  	background-size: 58%;
+		  	background-position: 50% 10%;
+		  }
+		}
 	}
 	#projects #milan
 	{
-	  background: url(#{$milanLoc}/img/prototypes/food-groups.png) no-repeat 50% 20%;
-	  background-size: 29%;
-	  background-color: #5abeca;
-	  transition: 300ms;
-	  &:hover {
-	  	background-size: 27%;
-	  	background-position: 50% 10%;
-	  }
+		a {
+		  background: url(#{$milanLoc}/img/prototypes/food-groups.png) no-repeat 50% 20%;
+		  background-size: 27%;
+		  background-color: #5abeca;
+		  transition: 300ms;
+		  &:hover {
+		  	background-size: 25%;
+		  	background-position: 50% 10%;
+		  }
+		}
 	}
 	#projects #wscpa
 	{
-	  background: url(#{$wscpaLoc}/img/wscpa-cover.png) no-repeat 50% 20%;
-	  background-size: 78%;
-	  background-color: #5abeca;
-	  transition: 300ms;
-	  &:hover {
-	  	background-size: 70%;
-	  	background-position: 50% 10%;
-	  }
+		.temp {
+		  background: url(#{$wscpaLoc}/img/wscpa-cover.png) no-repeat 50% 20%;
+		  background-size: 74%;
+		  background-color: #20DCA2;
+		  transition: 300ms;
+		  &:hover {
+		  	background-size: 68%;
+		  	background-position: 50% 10%;
+		  }
+		}
 	}
 	#projects #project1 .slide-title
 	{
