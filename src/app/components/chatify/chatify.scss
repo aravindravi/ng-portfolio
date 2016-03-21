@@ -1,13 +1,26 @@
 $chatify-primary-color: #16a086;
 
 .page-wrapper.chatify {
+	margin-top: 50px;
 	h3, h4 {
 		color: $chatify-primary-color;
 	}
 	ul .lnr {
 		color: $chatify-primary-color;
 	}
-	margin-top: 50px;
+	video {
+		max-height: 94%;
+	    max-width: 90%;
+	    padding: 13% 4%;
+	    background-size: 100%;
+	    background-repeat: no-repeat;
+	    padding-bottom: 64px;
+	  	//min-height: 540px;
+	}
+	.phone-bg {
+		//margin-top: 60px;
+		background-image: url(#{$chatifyLoc}/img/prototypes/chatify-phone.png);
+	}
 	.btn
 	{
 	  border-radius: 0;
@@ -35,19 +48,21 @@ $chatify-primary-color: #16a086;
 		}
 	}
 	.hero {
-		background: url(#{$chatifyLoc}/img/chatify.jpg) #000 fixed;
-		background-size: 100% 120%;
-	    -webkit-background-size: 100% 120%;
-	    -moz-background-size: 100% 120%;
-	    -o-background-size: 100% 120%;
-		color: $white;
+		//background: url(#{$chatifyLoc}/img/chatify.jpg) #000 fixed;
+		//background-size: 100% 120%;
+	    //-webkit-background-size: 100% 120%;
+	    //-moz-background-size: 100% 120%;
+	    //-o-background-size: 100% 120%;
+		h4 {
+			padding-bottom: 0;
+		}
 			.roles {
+				margin-left: -15px;
 				li {
-					text-align: center;
+
 				}
 				.lnr {
 					font-size: 1.5em;
-					color: $white;
 					font-size: 1.2em;
 					padding-bottom: 0;
 				}
@@ -62,9 +77,11 @@ $chatify-primary-color: #16a086;
 			    background-position: left;
 			}
 		    h1 {
-			  font-size: 72px;
-			  font-family: $opensans;
-			  margin-top: 80px;
+	    		color: $chatify-primary-color;
+			  font-size: 3em;
+			  margin-top: 30px;
+			  margin-bottom: 30px;
+			  color: $chatify-primary-color;
 			}
 			h2 {
 			  font-size: 48px;

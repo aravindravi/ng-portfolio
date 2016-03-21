@@ -44,7 +44,19 @@ $crm-primary-color: #1CBAD4;
 	ul {
 		margin-left: -15px;
 	}
-
+	video {
+		max-height: 94%;
+	    max-width: 90%;
+	    padding: 13% 4%;
+	    background-size: 100%;
+	    background-repeat: no-repeat;
+	    padding-bottom: 64px;
+	  	//min-height: 540px;
+	}
+	.phone-bg {
+		//margin-top: 60px;
+		background-image: url(#{$hopLoc}/img/hop-phone1.png);
+	}
 	.lnr {
 			color: $crm-primary-color;
 		}
