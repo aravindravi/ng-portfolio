@@ -5,8 +5,15 @@
     .module('arApp')
     .config(routeConfig)
     .run(function($rootScope, $location, $anchorScroll) {
-        $rootScope.$on( "$routeChangeSuccess", function(event, next, current) {
-          $anchorScroll();
+        $rootScope.authenticated = false;
+        $rootScope.$on( "$routeChangeStart", function(event, next, current) {
+          if (next.authenticate && $rootScope.authenticated != true){
+            $location.path('/portfolio/');
+          }
+          else {
+            $anchorScroll();  
+          }
+          
       });
     });
 
@@ -27,7 +34,7 @@
       })
       .when('/portfolio/hop', {
           controller: 'HopController',
-          templateUrl: 'app/components/hop/hop.html'
+          templateUrl: 'app/components/hop/hop.html',
       })
       .when('/portfolio/recall', {
           controller: 'RecallController',
@@ -35,15 +42,16 @@
       })
       .when('/portfolio/crm', {
         controller: 'CrmController',
-          templateUrl: 'app/components/crm/crm.html'
+          templateUrl: 'app/components/crm/crm.html',
       })
       .when('/portfolio/chatify', {
           controller: 'ChatifyController',
-          templateUrl: 'app/components/chatify/chatify.html'
+          templateUrl: 'app/components/chatify/chatify.html',      
       })
       .when('/portfolio/milan', {
           controller: 'MilanController',
           templateUrl: 'app/components/milan/milan.html'
+
       })
       .when('/portfolio/graphics', {
           controller: 'GraphicsController',

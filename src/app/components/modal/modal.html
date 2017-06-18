@@ -1,0 +1,16 @@
+<div class="login-modal ng-cloak">
+      <div class="modal-header">
+          <h3 class="modal-title" id="modal-title"><span class="lnr lnr-lock"></span> Password Required</h3>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <form ng-submit="auth()" class="form-inline">
+          <input class="form-control" type="password" id="password" placeholder="Password">
+          <button class="btn btn-confirm" type="button" ng-click="auth()">CONFIRM</button>
+          <p class="error" ng-if="errorMsg">{{errorMsg}}</p>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <p class=""><a href="mailto:aravind.ravi@outlook.com">Email me to get access</a> or take a look at my side projects for now</p>
+      </div>
+      
+</div>

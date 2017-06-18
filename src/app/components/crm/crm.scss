@@ -1,4 +1,4 @@
-$crm-primary-color: #1CBAD4;
+$crm-primary-color: #0099c7;
 
 .page-wrapper.crm {
 
@@ -7,7 +7,7 @@ $crm-primary-color: #1CBAD4;
 	}
 	margin-top: 50px;
 	.big-idea {
-		background: #1CBAD4;
+		background: $crm-primary-color;
 	    color: white;
 	    padding: 40px;
 	    font-weight: 100;
@@ -118,12 +118,12 @@ $crm-primary-color: #1CBAD4;
 		h2 {
 			padding-top: 100px;
 			font-size: 2em;
-			font-family: $opensans;
+			font-family: $paragraph;
 			font-weight: bolder;
 			color: $crm-primary-color;
 		}
 		p {
-			font-family: $opensans;
+			font-family: $paragraph;
 		}
 	}
 	.intro {

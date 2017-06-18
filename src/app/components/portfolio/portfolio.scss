@@ -9,7 +9,7 @@
 		}
 		h2 {
 			color: $black;
-			font-family: $opensans;
+			font-family: $paragraph;
 			font-weight: 100;
 			font-size: 1.8em;
 			line-height: 1.6;
@@ -23,7 +23,7 @@
 			font-weight: 100;
 			padding-left: 0;
 			margin-top: 20px;
-			font-family: $opensans;
+			font-family: $paragraph;
 		}
 		.social  {
 		    padding-top: 40px;
@@ -32,7 +32,9 @@
 			padding: 0 28px 0 0;
 		}
 	}
-	
+	.ngdialog-content {
+		background: #fff;
+	}
 	.hop-video {
 		max-height: 94%;
 	    max-width: 90%;
@@ -201,6 +203,20 @@
 			}
 		}
 	}
+	#projects #comet
+	{
+		a {
+		  background: url(#{$cometLoc}/img/cover.png) no-repeat 100%;
+		  background-size: auto 88%;
+		  background-position: 50% 0%;
+		  background-color: #0B1A59;
+		  transition: 300ms;
+		  &:hover {
+			  	background-size: auto 78%;
+			  	background-position: 50% 0%;
+			}
+		}
+	}
 	#projects #citi
 	{
 		.temp {
@@ -333,7 +349,7 @@
 	#projects .head1
 	{
 	  text-align: center;
-	  font-family: $opensans;
+	  font-family: $paragraph;
 	  color: $white;
 	  font-weight: normal;
 	  font-size: 48px;

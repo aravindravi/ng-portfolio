@@ -1,0 +1,29 @@
+.login-modal {
+	font-family: $paragraph;
+	.ngdialog-content {
+		background: #fff;
+	}
+	#password {
+		padding: 24px 12px;
+		font-size: 18px;
+	}
+	.error {
+		color: #ff9900;
+		margin-top: 6px;
+		margin-bottom: 0;
+	}
+	.btn {
+		padding: 10px 12px;
+		margin: 0;
+		.confirm {
+			background-color: $primary-color;
+		}
+	}
+	.modal-footer {
+		padding-bottom: 0;
+		p {
+			text-align: left;
+    		padding-left: 0;
+		}
+	}
+}
