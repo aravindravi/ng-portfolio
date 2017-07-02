@@ -53,12 +53,17 @@ $cometLoc: "/app/components/comet";
   font-family: FuturaLight;
   src: url("../assets/fonts/FuturaPTLight.otf") format("opentype");
 }
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+@font-face {
+  font-family: JosefinSans;
+  src: url("../assets/fonts/JosefinSans-Regular.ttf") format("opentype");
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300');
 
 
-$unisans: "Futura","Open Sans", Helvetica, Arial, sans-serif;
-$paragraph: "Quicksand", Helvetica, Arial, sans-serif;
-$heading-font: "FuturaMedium","serif", "Open Sans", Helvetica, Arial;
+$unisans: "Roboto Slab","Open Sans", Helvetica, Arial, sans-serif;
+$paragraph: "JosefinSans", Helvetica, Arial, sans-serif;
+$heading-font: "Roboto Slab","serif", "Open Sans", Helvetica, Arial;
 /*
  * COMMON
  */
@@ -206,13 +211,13 @@ header .logo {
 }
 .btn
 {
-  border-radius: 0;
+  border-radius: 3px;
   font-size: 18px;
   font-family: $unisans;
   letter-spacing: .04em;
   font-size: 1em;
   margin: 20px 0;
-  padding: 26px 44px;
+  padding: 18px 30px;
   background-color: transparent;
   border: 1px solid $primary-color;
   color: $primary-color;
@@ -397,7 +402,7 @@ section > .fp-tableCell
 }
 .page-wrapper {
   p {
-    //font-size: 1em;
+    font-size: 1em;
   }
   section {
     //margin-top: 40px;
@@ -681,7 +686,7 @@ section > .fp-tableCell
 
 .social .lnr
 {
-  color: #BBB;
+  color: #E6E6E6;
   font-size: 1.5em;
   @include transition(300ms);
 }

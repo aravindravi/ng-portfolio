@@ -42,7 +42,8 @@
       })
       .when('/portfolio/crm', {
         controller: 'CrmController',
-          templateUrl: 'app/components/crm/crm.html',
+        templateUrl: 'app/components/crm/crm.html',
+        authenticate: true
       })
       .when('/portfolio/chatify', {
           controller: 'ChatifyController',

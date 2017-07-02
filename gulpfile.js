@@ -8,7 +8,10 @@
 
 var gulp = require('gulp');
 var wrench = require('wrench');
+var gae = require('gulp-gae');
 
+// Optionally you can omit gae_dir parameter to use built-in appengine library
+var gae_dir = '/home/user/google-appengine';
 /**
  *  This will load all js or coffee files in the gulp directory
  *  in order to load all gulp tasks
