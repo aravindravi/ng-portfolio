@@ -8,10 +8,7 @@
 
 var gulp = require('gulp');
 var wrench = require('wrench');
-var gae = require('gulp-gae');
 
-// Optionally you can omit gae_dir parameter to use built-in appengine library
-var gae_dir = '/home/user/google-appengine';
 /**
  *  This will load all js or coffee files in the gulp directory
  *  in order to load all gulp tasks
@@ -31,25 +28,4 @@ gulp.task('default', ['clean'], function () {
   gulp.start('build');
 });
 
-gulp.task('gae-serve', function () {
-  gulp.src('app/app.yaml')
-    .pipe(gae('dev_appserver.py', [], {
-      port: 8081,
-      host: '0.0.0.0',
-      admin_port: 8001,
-      admin_host: '0.0.0.0'
-    }));
-});
- 
- 
-gulp.task('gae-deploy', function () {
-  gulp.src('app/app.yaml')
-    .pipe(gae('appcfg.py', ['update'], {
-      version: 'dev',
-      oauth2: undefined // for value-less parameters 
-    }));
-});
- 
- 
-gulp.task('default', ['gae-serve']);
 
