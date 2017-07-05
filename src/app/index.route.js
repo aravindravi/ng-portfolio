@@ -6,8 +6,8 @@
     .config(routeConfig)
     .run(function($rootScope, $location, $anchorScroll) {
         $rootScope.authenticated = false;
-        $rootScope.$on( "$routeChangeStart", function(event, next, current) {
-          if (next.authenticate && $rootScope.authenticated != true){
+        $rootScope.$on( "$routeChangeStart", function(event, next) {
+          if (next.authenticate && $rootScope.authenticated !== true){
             $location.path('/portfolio/');
           }
           else {

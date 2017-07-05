@@ -3,7 +3,7 @@
 // endbower
 
 /* COLORS */
-$primary-color: #0099c7;
+$primary-color: #16bb58;
 //06ACC7, 15AEC7, 0DA6BF, 0D9EBF
 $secondary-color: #D9C539;
 $dark-gray: #A9A9A9;
@@ -45,20 +45,12 @@ $cometLoc: "/app/components/comet";
   font-family: Unisans;
   src: url("../assets/fonts/Unisans.otf") format("opentype");
 }
-@font-face {
-  font-family: FuturaMedium;
-  src: url("../assets/fonts/FuturaPTMedium.otf") format("opentype");
-}
-@font-face {
-  font-family: FuturaLight;
-  src: url("../assets/fonts/FuturaPTLight.otf") format("opentype");
-}
 
 @font-face {
   font-family: JosefinSans;
   src: url("../assets/fonts/JosefinSans-Regular.ttf") format("opentype");
 }
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
 
 
 $unisans: "Roboto Slab","Open Sans", Helvetica, Arial, sans-serif;
@@ -173,12 +165,13 @@ header.state2  .menu > .active > a,
 header.state2  .menu > .active > a:hover, 
 header.state2  .menu > .active > a:focus
 {
-  color: $primary-color;
+  color: $black;
 }
 header.state2 .menu > .active > a,
 header.state2 .menu > .active > a:hover,
 header.state2 .menu > .active > a:focus {
-  border-bottom-color: $primary-color;
+  border-bottom-color: $black;
+  font-weight: bold;
 }
 header .logo {
   width: 40px;
@@ -411,6 +404,7 @@ section > .fp-tableCell
      //display: inline-block;
       font-family: $heading-font;
       padding-left: 15px; 
+      font-weight: normal;
   }
   h4 {
     font-weight: normal;
@@ -684,51 +678,6 @@ section > .fp-tableCell
 }
 
 
-.social .lnr
-{
-  color: #E6E6E6;
-  font-size: 1.5em;
-  @include transition(300ms);
-}
-.social .lnr:hover
-{
-  color: $primary-color;
-}
-.social > ul
-{
-  list-style: none;
-  display: inline-block;
-  z-index: 4;
-  position: relative;
-  color: $white;
-  -webkit-padding-start: 0px;
-}
-.social > ul > li
-{
-  display: inline-block;
-  padding: 0 2px;
-  font-size: 14px;
-}
-.social > ul > li > a
-{
-  width: 30px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  color: #a6a6a6;
-  display: inline-block;
-  text-align: center;
-  /* line-height: 40px; */
-  color: #A6A6A6;
-  @include transition(300ms);
-}
-.social > ul > li > a:hover
-{
-  //background: $primary-color;
-  text-decoration: none;
-  .lnr {
-    color: $primary-color;
-  }
-}
 footer
 {
   padding: 6px;

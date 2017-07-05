@@ -1,140 +1,88 @@
 .page-wrapper.main {
+	.hero {
+		background: #FDFBFB;
+		background: -webkit-linear-gradient(left top, #FDFBFB, #EBEDEE); 
+	    background: -o-linear-gradient(bottom right, #FDFBFB, #EBEDEE); 
+	    background: -moz-linear-gradient(bottom right, #FDFBFB, #EBEDEE);
+	    background: linear-gradient(to bottom right, #EBEDEE, #EBEDEE); 
+	    height: 574px;
+	    border-bottom: 1px solid #D8D8D8;
+	}
+	.intro-section {
+		background: #FFFFFF;
+		border-radius: 4px;
+		-webkit-box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.1);
+		box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.1);
+		-moz-box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.1);
+		width: 70%;
+		height: 350px;
+		margin: auto;
+		margin-top: 120px;
+		position: absolute;
+	    right: 220px;
+	    z-index: 1;
+	    padding: 40px 80px;
+	}
+	.profile-pic {
+		width: 250px;
+		position: absolute;
+		top: 80px;
+    	right: 100px;
+	    top: 80px;
+	    z-index: 2;
+	    -webkit-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.25));
+	    filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.25));
+	    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='rgba(0,0,0,0.25)')";
+	    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='rgba(0,0,0,0.25)')";
+	}
 	h1 {
-		font-size: 3.125em;
-		font-family: "Unisans", "Josefin sans";
-		color: $white;
-		.highlight {
-			color: $primary-color;
-		}
+		font-size: 2.125em;
+		font-weight: bold;
 	}
 	h2 {
-		color: $black;
 		font-family: $paragraph;
 		font-weight: 100;
-		font-size: 1.5em;
+		font-size: 1.25em;
 		line-height: 1.6;
-		.highlight {
-			color: $primary-color;
-		}
-	}
-	.white-btn {
-		margin-bottom: 0;
-	}
-	.title {
-		margin-top: 160px;
+		padding-top: 20px;
+		width: 60%;
 	}
 	
-	.intro-snippets {
-		margin-top: 120px;
-		.lnr {
-			color: $white;
-			padding-bottom: 10px;
-			font-size: 1.5em;
-		}
-	}
-	.hero {
-		padding-top: 80px;
-	}
-	.view-portfolio {
-		margin-top: 60px;
-	}
-	.description {
-		color: #FFF;
-	}
-	.homepage-hero-module {
-	    border-right: none;
-	    border-left: none;
-	    position: relative;
-	}
-	.no-video .video-container video,
-	.touch .video-container video {
-	    display: none;
-	}
-	.no-video .video-container .poster,
-	.touch .video-container .poster {
-	    display: block !important;
-	}
-	.video-container {
-	    position: relative;
-	    bottom: 0%;
-	    left: 0%;
-	    height: 100%;
-	    width: 100%;
-	    overflow: hidden;
-	    background: #000;
-	}
-	.video-container .poster img {
-	    width: 100%;
-	    bottom: 0;
-	    position: absolute;
-	}
-	.video-container .filter {
-	    z-index: 100;
-	    position: absolute;
-	    background: rgba(0, 0, 0, 0.4);
-	    width: 100%;
-	}
-	.video-container video {
-	    position: absolute;
-	    z-index: 0;
-	    bottom: 0;
-	    object-fit: cover;
-	}
-	.video-container video.fillWidth {
-	    width: 100%;
-	}
-	.what-i-do {
-		.lnr {
-			font-size: 1.5em;
-			color: $primary-color;
-		}
-		h4 {
-			padding: 0;
-			font-family: $paragraph;
-			font-weight: lighter;
-		}
-	}
-	.highlight {
-			color: $white;
-			font-weight: 400;
-		}
 	.social  {
-	    padding-top: 20px;
+	    padding-top: 40px;
+	    margin-left: -4px;
 	}
 	.social > ul > li {
 	    display: inline-block;
-	    padding: 10px 8px;
+	    padding-right: 28px;
+
 	    //min-height: 48px;
 	}
 	.social a {
-		color: $dark-gray;
+		color: #333;
+		padding: 4px;
+		font-size: 20px;
 		&:hover {
-			color: $primary-color;
+			text-decoration: none;
+			border-bottom: 2px solid #000;
 		}
 	}
-
+	.recent-work {
+		h3 {
+			padding-bottom: 40px;
+		}
+		.cover-img {
+			-webkit-box-shadow: 0 0 12px rgba(0,0,0,0.25);
+			box-shadow: 0 0 12px rgba(0,0,0,0.25);
+			-moz-box-shadow: 0 0 12px rgba(0,0,0,0.25);
+		}
+	}
 }
 @media (max-width: 480px) {
 	.page-wrapper.main {
-		h1 {
-			font-size: 2em;		
-		}
-		.title {
-		margin-top: 100px;
+		
 	}
 }
 @media (min-width: 1366px) {
-  .page-wrapper.main {
-    .title {
-      margin-top: 200px;
-    }
-    .description {
-      margin-top: 40px;
-    }
-    .view-portfolio {
-      margin-top: 160px !important;
-    }
-  }
+  
 }	
-
-}
