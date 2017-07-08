@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('arApp', ['ngAnimate', 'ngRoute', 'ngDialog', 'ui.bootstrap']);
+    .module('arApp', ['ngAnimate', 'ngRoute', 'ngDialog', 'ui.bootstrap', 'angular-parallax']);
     
 })();
