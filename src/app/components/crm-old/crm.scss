@@ -1,4 +1,4 @@
-$crm-primary-color: #0099c7;
+$crm-primary-color: #BAD328;
 
 .page-wrapper.crm {
 
@@ -106,13 +106,106 @@ $crm-primary-color: #0099c7;
 			  line-height: 1.5em;
 			}
 			.project-summary {
-				color: $white;
-				background-color: $crm-primary-color;
-				h1, h2, h3, h4 {
-					color: $white;
+				margin-bottom: 30px;
+				ul {
+					margin-left: 0px;
+					padding-bottom: 20px;
+					li {
+						margin-bottom: 2px;
+					}
+					span {
+						padding: 2px;
+						margin-right: 4px;
+						background: $crm-primary-color;
+						border-radius: 2px;
+					}
+				}
+				.lnr {
+						color: $white;
+				}
+				.primary-segment {
+					padding-right: 120px;
+				}
+				h4 {
+					color: $black;
+				}
+				.secondary-segment {
+					padding-left: 30px;
+					background: $light-gray;
+					border-radius: 2px;
+					.team {
+						padding-bottom: 0;
+						li {
+							display: inline-block;
+							background: $dark-gray;
+							border-radius: 40px;
+							padding: 20px;
+							background-size: 100%;
+						}
+						.jeff {
+								background-image: url(#{$crmLoc}/general/jeff.jpg);
+						}
+						.richard {
+								background-image: url(#{$crmLoc}/general/richard.jpg);
+						}
+						.teage {
+								background-image: url(#{$crmLoc}/general/teage.jpg);
+						}
+						.aravind {
+								background-image: url(#{$crmLoc}/general/aravind.jpg);
+								background-size: 110%;
+						}
+						.priya {
+								background-image: url(#{$crmLoc}/general/priya.jpg);
+						}
+						.jake {
+								background-image: url(#{$crmLoc}/general/jake.jpg);
+						}
+						.chris {
+								background-image: url(#{$crmLoc}/general/chris.jpg);
+						}
+					}
 				}
 			}
 	}
+	.research-intro {
+		background-image: url(#{$crmLoc}/research/research-display.jpg);
+		padding: 60px 0;
+		.research-process {
+			line-height: 1.2;
+			padding: 30px;
+			background: $white;
+			border-radius: 2px;
+			.title {
+				font-weight: bolder;
+				padding-top: 15px;
+			}
+		}
+		ul {
+			padding: 15px;
+			li {
+				font-size: 14px;
+				width: 140px;
+				padding: 15px 15px 5px 20px;
+				border: 1px solid $light-gray2;
+				border-radius: 2px;
+				display: inline-block;
+				margin-bottom: 20px;
+				.number {
+					font-size: 1.75rem;
+				}
+				&:nth-child(odd) {
+					margin-right: 20px; 
+				}
+			}
+			.lnr {
+				color: $black;
+				padding-right: 12px;
+				font-size: 1.25rem;
+			}
+		}
+	}
+}
 	.product {
 		
 		h2 {
@@ -154,7 +247,6 @@ $crm-primary-color: #0099c7;
 		h4 {
 			font-weight: bolder;
 			font-family: $unisans;
-			font-size: 1.5em;
 			padding-top: 20px;
 			color: $crm-primary-color;
 		}
@@ -178,69 +270,7 @@ $crm-primary-color: #0099c7;
 			height: 140px;
 		}
 	}
-	.toc .lnr {
-      color: $crm-primary-color;
-    }
-	.user-research {
-		.lnr {
-			color: $crm-primary-color;
-			padding-top: 20px;
-		}
-		.research-findings > li > p{
-			height: 140px;
-		}
-	}
-	.analysis {
-		.competitive-analysis {
-			p {
-				padding: 0;
-			}
-			h4 {
-				padding: 10px 0 0 0;
-			}
-		}
-		.design-considerations > li > p{
-			height: 140px;
-		}
-		
-	}
-	.ia {
-		
-	}
-	.visual-design {
-		.colors {
-			border: 1px solid #979797;
-			padding-top: 0;
-			display: inline-block;
-			li {
-				&:not(:first-child) {
-					margin-left: -6px;
-				}
-				width: 160px;
-				height: 160px;
-				padding: 64px 10px;
-				display: inline-block;
-			}
-			.c75C03A {
-				background-color: $crm-primary-color;
-				color: #FFFFFF;
-			}
-			.c000000 {
-				background-color: #000000;
-				color: #FFFFFF;
-			}
-			.c979797 {
-				background-color: #979797;
-			}
-			.cFFFFFF {
-				background-color: #FFFFFF;
-			}
-			.cDCDCDC {
-				background-color: #DCDCDC;
-			}
-		}
-	}
-}
+
 @media (max-width: 768px) {
 	.page-wrapper.crm {
 		.hero {

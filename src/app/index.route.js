@@ -8,7 +8,7 @@
         $rootScope.authenticated = false;
         $rootScope.$on( "$routeChangeStart", function(event, next) {
           if (next.authenticate && $rootScope.authenticated !== true){
-            $location.path('/portfolio/');
+            $location.path('/');
           }
           else {
             $anchorScroll();  
@@ -43,7 +43,6 @@
       .when('/portfolio/crm', {
         controller: 'CrmController',
         templateUrl: 'app/components/crm/crm.html',
-        authenticate: true
       })
       .when('/portfolio/chatify', {
           controller: 'ChatifyController',
@@ -69,6 +68,11 @@
       .when('/portfolio/infoviz', {
           controller: 'InfovizController',
           templateUrl: 'app/components/infoviz/infoviz.html'
+      })
+      .when('/portfolio/test', { //Backup
+        controller: 'CrmController',
+        templateUrl: 'app/components/test.html',
+        authenticate: true
       })
       .otherwise({
           redirectTo: '/'

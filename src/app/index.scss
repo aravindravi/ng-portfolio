@@ -3,11 +3,12 @@
 // endbower
 
 /* COLORS */
-$primary-color: #16bb58;
+$primary-color: #009AF2;
 //06ACC7, 15AEC7, 0DA6BF, 0D9EBF
 $secondary-color: #D9C539;
 $dark-gray: #A9A9A9;
 $light-gray: #F6F6F6;
+$light-gray2: #E4E4E4;
 $white: #FFFFFF;
 $black: #000000; 
 
@@ -47,14 +48,14 @@ $cometLoc: "/app/components/comet";
 }
 
 @font-face {
-  font-family: JosefinSans;
+  font-family: Brandon;
   src: url("../assets/fonts/JosefinSans-Regular.ttf") format("opentype");
 }
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
 
 
 $unisans: "Roboto Slab","Open Sans", Helvetica, Arial, sans-serif;
-$paragraph: "JosefinSans", Helvetica, Arial, sans-serif;
+$paragraph: "Brandon", Helvetica, Arial, sans-serif;
 $heading-font: "Roboto Slab","serif", "Open Sans", Helvetica, Arial;
 /*
  * COMMON
@@ -77,11 +78,11 @@ h1,h2,h3,h4,h5,h6
 }
 h1
 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 h2
 {
-  font-size: 28px;
+  font-size: 1.5rem;
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -91,11 +92,11 @@ h3
 }
 h4
 {
-  font-size: 20px;
+  font-size: 1.125rem;
 }
 h5
 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 h6
 {
@@ -409,8 +410,8 @@ section > .fp-tableCell
   h4 {
     font-weight: normal;
     font-family: $heading-font;
-    font-size: 1.5em;
     padding: 20px 0;
+    padding-bottom: 8px;
   }
   p.icon-caption {
     font-weight: normal;
@@ -440,10 +441,6 @@ section > .fp-tableCell
   }
   .section-title {
     text-align: center;
-  }
-  .project-intro {
-    background: rgba(0,0,0,0.4);
-    margin-top: 20px;
   }
 }
 .gray-box {
